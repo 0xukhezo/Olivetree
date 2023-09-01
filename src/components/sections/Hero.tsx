@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../layout/Navbar";
 import Image from "next/image";
 import TreeImage from "../../../public/Tree.svg";
+import Paragraphs from "../Paragraphs/Paragraphs";
 
 function Hero() {
   return (
@@ -9,16 +10,20 @@ function Hero() {
       <Navbar />
       <div className="flex flex-row justify-between">
         <div className="mt-[196px] max-w-[625px]">
-          <div className="gradient-container mb-[16px]">
-            <h1 className="text-7xl font-semibold tracking-tight min-h-[237px]">
-              Flexible Peer-to-Syndicate Lending for All Digital Assets
-            </h1>
-          </div>
-          <p className="text-greenDark ">
-            Olivetree is a generalized credit protocol to borrow against any
-            combination of arbitrary assets, free from forced liquidations and
-            oracle dependencies.
-          </p>
+          <Paragraphs
+            title={
+              <h1 className="text-7xl font-semibold tracking-tight min-h-[237px]">
+                Flexible Peer-to-Syndicate Lending for All Digital Assets
+              </h1>
+            }
+            text={
+              <p className="text-greenDark">
+                Olivetree is a generalized credit protocol to borrow against any
+                combination of arbitrary assets, free from forced liquidations
+                and oracle dependencies.
+              </p>
+            }
+          />
           <button className="p-5 text-white bg-greenDark rounded-lg mt-[32px]">
             Join our Twitter
           </button>
