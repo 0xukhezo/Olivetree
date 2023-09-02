@@ -13,6 +13,15 @@
   }
 }
 
+@keyframes animateLine {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 .underline-hover {
   position: relative;
   display: inline-block;
@@ -43,4 +52,28 @@
   -webkit-background-clip: text; 
   background-clip: text;
   color: transparent; 
+}
+
+.double-color{
+  background: linear-gradient(
+    to bottom,
+    white 0%,
+    white 50%,
+    #083C2F 50%,
+    #083C2F 100%
+  );
+}
+
+.green-filter {
+  position: relative;
+}
+
+.green-filter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8,60,47,0.43); 
 }
