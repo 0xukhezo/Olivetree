@@ -7,8 +7,8 @@ export default function Faq() {
       id="faq"
     >
       <h1 className="mt-[104px] mb-[80px]">Common questions & answers</h1>
-      <div className="grid grid-cols-2 justify-items-center text-start">
-        <div className="border-b-1 border-neutral3 max-w-[505px]">
+      <div className="grid lg:grid-cols-2 gap-x-[50px] justify-items-center text-start">
+        <div className="border-b-1 border-neutral3 max-w-[505px] mb-[41px] lg:mb-0">
           <h2>
             How does taking out a loan on Olivetree compare to Aave or Compound?
           </h2>

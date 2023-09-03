@@ -12,20 +12,28 @@ function Why() {
       className="px-[20px] sm:px-[30px] md:px-[60px] lg:px-[100px] xl:px-[152px] bg-white"
       id="why"
     >
-      <div className="text-center text-greenDark mb-[250px] mt-[135px]">
-        <h1>Why Choose Olivetree?</h1>
-        <div className="grid grid-cols-2 mt-[48px] gap-x-[16px]">
+      <div className="text-start md:text-center text-greenDark mb-[63px] xl:mb-[250px] mt-[100px] xl:mt-[135px]">
+        <div className="gradient-container md:text-greenDark mb-[16px]">
+          <h1 className="text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight xl:min-h-[137px]">
+            Why Choose <br className="block md:hidden" /> Olivetree?
+          </h1>
+        </div>
+        <div className="grid md:grid-cols-2 mt-[48px] gap-x-[16px] ">
           <div>
-            <h2>For Borrowers</h2>
-            <p>
+            <h2 className="mb-[16px] text-greenDark text-lg font-semibold">
+              For Borrowers
+            </h2>
+            <p className="max-w-[484px] xl:mx-auto">
               Receive one loan against any or all of your on-chain assets. No
               forced liquidations and repay at any time with structures unique
               to you.
             </p>
           </div>
-          <div>
-            <h2>For Lenders</h2>
-            <p>
+          <div className="mt-[16px] md:mt-0">
+            <h2 className="mb-[16px] text-greenDark text-lg font-semibold">
+              For Lenders
+            </h2>
+            <p className="max-w-[484px] xl:mx-auto">
               Earn attractive fixed-rate returns for your stablecoins. Access
               yield from any asset class with sustainable on-chain returns.
             </p>
@@ -33,10 +41,17 @@ function Why() {
         </div>
       </div>
       <div>
-        <div className="grid grid-cols-2">
+        <div className="grid md:grid-cols-2">
+          <Image
+            src={Segregated.src}
+            alt="Your Company"
+            width={578}
+            height={454}
+            className="block md:hidden mb-[60px]"
+          />
           <Paragraphs
             title={
-              <h1 className="text-7xl font-semibold tracking-tight min-h-[237px]">
+              <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px]">
                 Segregated Risk Arranged directly between borrowers & lenders.
               </h1>
             }
@@ -51,27 +66,26 @@ function Why() {
               </p>
             }
           />
-
           <Image
             src={Segregated.src}
             alt="Your Company"
             width={578}
             height={454}
-            className="pulse-element"
+            className="pulse-element md:block hidden"
           />
         </div>
 
-        <div className="grid grid-cols-2 my-[124px]">
+        <div className="grid lg:grid-cols-2 lg:my-[124px]">
           <Image
             src={Loans.src}
             alt="Your Company"
             width={615}
             height={480}
-            className="pulse-element"
+            className="mb-[100px] lg:mb-0"
           />
           <Paragraphs
             title={
-              <h1 className="text-7xl font-semibold tracking-tight min-h-[237px]">
+              <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px]">
                 Financing Flexibility. Loans Unique to You.
               </h1>
             }
@@ -85,10 +99,17 @@ function Why() {
             }
           />
         </div>
-        <div className="grid grid-cols-2">
+        <div className="grid lg:grid-cols-2">
+          <Image
+            src={Lens.src}
+            alt="Your Company"
+            width={578}
+            height={454}
+            className="block md:hidden mb-[60px]"
+          />
           <Paragraphs
             title={
-              <h1 className="text-7xl font-semibold tracking-tight min-h-[237px]">
+              <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px]">
                 Fast.
                 <br /> Lending.
                 <br /> Reformed.
@@ -104,13 +125,12 @@ function Why() {
               </p>
             }
           />
-
           <Image
             src={Lens.src}
             alt="Your Company"
             width={565}
             height={480}
-            className="pulse-element"
+            className="pulse-element md:block hidden"
           />
         </div>
       </div>
