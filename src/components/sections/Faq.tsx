@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Faq() {
   return (
-    <div className="text-center px-[20px] sm:px-[30px] md:px-[60px] lg:px-[100px] xl:px-[152px] mb-[57px]">
+    <div
+      className="text-center px-[20px] sm:px-[30px] md:px-[60px] lg:px-[100px] xl:px-[152px] mb-[57px]"
+      id="faq"
+    >
       <h1 className="mt-[104px] mb-[80px]">Common questions & answers</h1>
       <div className="grid grid-cols-2 justify-items-center text-start">
         <div className="border-b-1 border-neutral3 max-w-[505px]">

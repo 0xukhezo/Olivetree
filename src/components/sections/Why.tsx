@@ -8,7 +8,10 @@ import Paragraphs from "../Paragraphs/Paragraphs";
 
 function Why() {
   return (
-    <main className="px-[20px] sm:px-[30px] md:px-[60px] lg:px-[100px] xl:px-[152px] bg-white">
+    <main
+      className="px-[20px] sm:px-[30px] md:px-[60px] lg:px-[100px] xl:px-[152px] bg-white"
+      id="why"
+    >
       <div className="text-center text-greenDark mb-[250px] mt-[135px]">
         <h1>Why Choose Olivetree?</h1>
         <div className="grid grid-cols-2 mt-[48px] gap-x-[16px]">

@@ -1,6 +1,7 @@
 // import Image from "next/image";
 // import { Inter } from "next/font/google";
 
+import Footer from "@/components/layout/Footer";
 import Early from "@/components/sections/Early";
 import Faq from "@/components/sections/Faq";
 import Hero from "@/components/sections/Hero";
@@ -19,6 +20,7 @@ export default function Home() {
       <Roadmap />
       <Faq />
       <Next />
+      <Footer />
     </main>
   );
 }

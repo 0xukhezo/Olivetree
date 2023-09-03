@@ -4,7 +4,7 @@ import RoadmapTree from "../../../public/RoadmapTree.svg";
 
 export default function Roadmap() {
   return (
-    <div className="bg-greenDark py-[77px] text-center">
+    <div className="bg-greenDark py-[77px] text-center" id="roadmap">
       <div
         className="bg-cover bg-center flex items-center justify-center flex-col max-w-[739px] h-[739px] mx-auto"
         style={{ backgroundImage: `url('${RoadmapTree.src}')` }}
