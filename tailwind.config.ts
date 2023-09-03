@@ -17,6 +17,7 @@ const config: Config = {
         greenLight: "#C9F269",
         greenDark: "#083C2F",
       },
+      borderWidth: { 1: "1px" },
     },
   },
   plugins: [],

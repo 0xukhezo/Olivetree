@@ -2,7 +2,9 @@
 // import { Inter } from "next/font/google";
 
 import Early from "@/components/sections/Early";
+import Faq from "@/components/sections/Faq";
 import Hero from "@/components/sections/Hero";
+import Next from "@/components/sections/Next";
 import Roadmap from "@/components/sections/Roadmap";
 import Why from "@/components/sections/Why";
 
@@ -15,6 +17,8 @@ export default function Home() {
       <Why />
       <Early />
       <Roadmap />
+      <Faq />
+      <Next />
     </main>
   );
 }
