@@ -35,7 +35,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="flex md:justify-end md:mt-[150px] mt-[24px] border-b-1 border-neutral6 text-neutral6 gap-x-[67px] pb-[17px]">
+      <div className="flex justify-around sm:justify-start md:justify-end md:mt-[150px] mt-[24px] border-b-1 border-neutral6 text-neutral6 gap-x-[67px] pb-[17px]">
         <a href="/privacy_policy" target="_blank" className="hover:text-white">
           Privacy Policy
         </a>

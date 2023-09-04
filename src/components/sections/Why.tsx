@@ -71,11 +71,11 @@ function Why() {
             alt="Your Company"
             width={578}
             height={454}
-            className="pulse-element md:block hidden"
+            className="pulse-element md:block hidden my-auto"
           />
         </div>
 
-        <div className="grid lg:grid-cols-2 lg:my-[124px]">
+        <div className="grid md:grid-cols-2 lg:my-[124px]">
           <Image
             src={Loans.src}
             alt="Your Company"
@@ -99,7 +99,7 @@ function Why() {
             }
           />
         </div>
-        <div className="grid lg:grid-cols-2">
+        <div className="grid md:grid-cols-2">
           <Image
             src={Lens.src}
             alt="Your Company"

@@ -42,7 +42,7 @@ function Hero() {
             alt="Your Company"
             width={527}
             height={241}
-            className="block lg:hidden"
+            className="block lg:hidden mx-auto"
           />
         </div>
       </div>

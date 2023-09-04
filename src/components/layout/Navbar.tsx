@@ -8,7 +8,7 @@ export default function Navbar() {
     <Disclosure as="nav" id="navbar">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-7xl pt-5">
             <div className="flex h-16 items-center justify-between">
               <div className="flex-shrink-0">
                 <a href="#navbar">
@@ -21,7 +21,7 @@ export default function Navbar() {
                 </a>
               </div>
               <div className="flex items-center">
-                <div className="hidden sm:ml-6 sm:block">
+                <div className="hidden sm:ml-6 md:block">
                   <div className="flex space-x-10 text-neutral6">
                     <a href="#why" className="underline-hover">
                       Why
@@ -49,7 +49,7 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-          <div className="sm:hidden fixed inset-x-0 bottom-0 w-full z-50">
+          <div className="md:hidden fixed inset-x-0 bottom-0 w-full z-50">
             <div className="mx-5 flex items-center justify-between mb-[25px] bg-greenDark text-white p-5 rounded-lg">
               <a href="#why" className="underline-hover">
                 Why
