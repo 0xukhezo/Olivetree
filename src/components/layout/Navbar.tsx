@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import Logo from "../../../public/Logo.svg";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Navbar() {
   const route = useRouter();
@@ -12,36 +13,36 @@ export default function Navbar() {
           <div className="mx-auto max-w-7xl pt-5">
             <div className="flex h-16 items-center justify-between">
               <div className="flex-shrink-0">
-                <a href="/">
+                <Link href="/">
                   <Image
                     src={Logo.src}
                     alt="Your Company"
                     width={205}
                     height={50}
                   />
-                </a>
+                </Link>
               </div>
               <div className="flex items-center">
                 <div className="hidden sm:ml-6 md:block">
                   <div className="flex space-x-10 text-neutral6">
-                    <a
+                    <Link
                       href={route.route !== "/" ? "/#why" : "#why"}
                       className="underline-hover"
                     >
                       Why
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href={route.route !== "/" ? "/#roadmap" : "#roadmap"}
                       className="underline-hover"
                     >
                       Roadmap
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href={route.route !== "/" ? "/#faq" : "#faq"}
                       className="underline-hover"
                     >
                       FAQ
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -61,24 +62,11 @@ export default function Navbar() {
           </div>
           <div className="md:hidden fixed inset-x-0 bottom-0 w-full z-50 ">
             <div className="mx-5 flex items-center justify-between mb-[25px] bg-greenDark text-white p-5 rounded-lg border-white border-1">
-              <a
-                href={route.route !== "/" ? "/#why" : "#why"}
-                className="underline-hover"
-              >
-                Why
-              </a>
-              <a
-                href={route.route !== "/" ? "/#roadmap" : "#roadmap"}
-                className="underline-hover"
-              >
+              <Link href={route.route !== "/" ? "/#why" : "#why"}>Why</Link>
+              <Link href={route.route !== "/" ? "/#roadmap" : "#roadmap"}>
                 Roadmap
-              </a>
-              <a
-                href={route.route !== "/" ? "/#faq" : "#faq"}
-                className="underline-hover"
-              >
-                FAQ
-              </a>
+              </Link>
+              <Link href={route.route !== "/" ? "/#faq" : "#faq"}>FAQ</Link>
             </div>
           </div>
         </>
