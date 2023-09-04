@@ -14,12 +14,12 @@ const privacyData = [
   },
 ];
 
-export default function Conditions() {
+export default function PrivacyPolicy() {
   return (
     <div className="px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]">
       <Navbar />
       <ConditionsPrivacyInfo
-        title="Terms and Conditions"
+        title="Privacy"
         date="Last Updated on May 15, 2023"
         data={privacyData}
       />

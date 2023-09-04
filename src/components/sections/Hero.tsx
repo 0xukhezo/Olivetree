@@ -7,13 +7,13 @@ import Paragraphs from "../Paragraphs/Paragraphs";
 
 function Hero() {
   return (
-    <div className="bg-neutral0 xl:py-[88px] px-[20px] sm:px-[30px] md:px-[60px] lg:px-[100px] xl:px-[152px]">
+    <div className="bg-neutral0 xl:py-[36px] px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]">
       <Navbar />
       <div className="flex flex-col lg:flex-row justify-between">
         <div className="mt-[52px] xl:mt-[196px] lg:max-w-[476px] xl:max-w-[625px]">
           <Paragraphs
             title={
-              <h1 className="text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight lg:min-h-[237px]">
+              <h1 className="text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral">
                 Flexible Peer-to-Syndicate Lending for All Digital Assets
               </h1>
             }

@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Logo from "../../../public/Logo.svg";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
+  const route = useRouter();
   return (
     <Disclosure as="nav" id="navbar">
       {({ open }) => (
@@ -11,7 +12,7 @@ export default function Navbar() {
           <div className="mx-auto max-w-7xl pt-5">
             <div className="flex h-16 items-center justify-between">
               <div className="flex-shrink-0">
-                <a href="#navbar">
+                <a href="/">
                   <Image
                     src={Logo.src}
                     alt="Your Company"
@@ -23,13 +24,22 @@ export default function Navbar() {
               <div className="flex items-center">
                 <div className="hidden sm:ml-6 md:block">
                   <div className="flex space-x-10 text-neutral6">
-                    <a href="#why" className="underline-hover">
+                    <a
+                      href={route.route !== "/" ? "/#why" : "#why"}
+                      className="underline-hover"
+                    >
                       Why
                     </a>
-                    <a href="#roadmap" className="underline-hover">
+                    <a
+                      href={route.route !== "/" ? "/#roadmap" : "#roadmap"}
+                      className="underline-hover"
+                    >
                       Roadmap
                     </a>
-                    <a href="#faq" className="underline-hover">
+                    <a
+                      href={route.route !== "/" ? "/#faq" : "#faq"}
+                      className="underline-hover"
+                    >
                       FAQ
                     </a>
                   </div>
@@ -49,15 +59,24 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-          <div className="md:hidden fixed inset-x-0 bottom-0 w-full z-50">
-            <div className="mx-5 flex items-center justify-between mb-[25px] bg-greenDark text-white p-5 rounded-lg">
-              <a href="#why" className="underline-hover">
+          <div className="md:hidden fixed inset-x-0 bottom-0 w-full z-50 ">
+            <div className="mx-5 flex items-center justify-between mb-[25px] bg-greenDark text-white p-5 rounded-lg border-white border-1">
+              <a
+                href={route.route !== "/" ? "/#why" : "#why"}
+                className="underline-hover"
+              >
                 Why
               </a>
-              <a href="#roadmap" className="underline-hover">
+              <a
+                href={route.route !== "/" ? "/#roadmap" : "#roadmap"}
+                className="underline-hover"
+              >
                 Roadmap
               </a>
-              <a href="#faq" className="underline-hover">
+              <a
+                href={route.route !== "/" ? "/#faq" : "#faq"}
+                className="underline-hover"
+              >
                 FAQ
               </a>
             </div>

@@ -22,6 +22,9 @@ const config: Config = {
       screens: {
         roadmap: "907px",
       },
+      fontFamily: {
+        spectral: ["Spectral", "regular"],
+      },
     },
   },
   plugins: [],

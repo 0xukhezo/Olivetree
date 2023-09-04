@@ -9,12 +9,12 @@ import Paragraphs from "../Paragraphs/Paragraphs";
 function Why() {
   return (
     <main
-      className="px-[20px] sm:px-[30px] md:px-[60px] lg:px-[100px] xl:px-[152px] bg-white"
+      className="px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px] bg-white"
       id="why"
     >
       <div className="text-start md:text-center text-greenDark mb-[63px] xl:mb-[250px] mt-[100px] xl:mt-[135px]">
         <div className="gradient-container md:text-greenDark mb-[16px]">
-          <h1 className="text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight xl:min-h-[137px]">
+          <h1 className="text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight xl:min-h-[137px] font-spectral">
             Why Choose <br className="block md:hidden" /> Olivetree?
           </h1>
         </div>
@@ -51,7 +51,7 @@ function Why() {
           />
           <Paragraphs
             title={
-              <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px]">
+              <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral">
                 Segregated Risk Arranged directly between borrowers & lenders.
               </h1>
             }
@@ -85,7 +85,7 @@ function Why() {
           />
           <Paragraphs
             title={
-              <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px]">
+              <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral">
                 Financing Flexibility. Loans Unique to You.
               </h1>
             }
