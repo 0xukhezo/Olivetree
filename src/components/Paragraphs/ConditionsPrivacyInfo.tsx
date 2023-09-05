@@ -30,7 +30,9 @@ export default function ConditionsPrivacyInfo({
               <h2 className="mb-[24px] font-semibold text-2xl">
                 {dataPoint.title}
               </h2>
-              <p className="mb-[48px] text-lg font-normal">{dataPoint.text}</p>
+              <div className="mb-[48px] text-lg font-normal">
+                {dataPoint.text}
+              </div>
             </div>
           );
         })}

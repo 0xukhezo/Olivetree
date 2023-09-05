@@ -11,10 +11,10 @@ export default function Faq() {
       </h1>
       <div className="grid lg:grid-cols-2 gap-x-[50px] justify-items-center text-start">
         <div className="border-b-1 border-neutral3 max-w-[505px] mb-[41px] lg:mb-0">
-          <h2>
+          <h2 className="text-greenDark font-semibold">
             How does taking out a loan on Olivetree compare to Aave or Compound?
           </h2>
-          <p className="mt-[24px] mb-[42px]">
+          <p className="mt-[24px] mb-[42px] text-neutral6">
             Peer-to-Pool (or Peer-to-Contract) protocols such as Aave or
             Compound are attractive for specific approved collateral types (ETH,
             CRV, etc.) and strategies such as flash loans.
@@ -26,8 +26,10 @@ export default function Faq() {
           </p>
         </div>
         <div className="border-b-1 border-neutral3 max-w-[505px]">
-          <h2>Why should I lend capital on Olivetree?</h2>
-          <p className="mt-[24px] mb-[42px]">
+          <h2 className="text-greenDark font-semibold">
+            Why should I lend capital on Olivetree?
+          </h2>
+          <p className="mt-[24px] mb-[42px] text-neutral6">
             Sophisticated lenders gain wider access to investment opportunities,
             enhancing their deal flow and potential for capital deployment.
             Individual professionals or retail investors gain access to
@@ -39,8 +41,10 @@ export default function Faq() {
           </p>
         </div>
         <div className="border-b-1 border-neutral3 max-w-[505px] my-[41px]">
-          <h2>How am I protected from forced liquidations?</h2>
-          <p className="mt-[24px] mb-[42px]">
+          <h2 className="text-greenDark font-semibold">
+            How am I protected from forced liquidations?
+          </h2>
+          <p className="mt-[24px] mb-[42px] text-neutral6">
             Peer-to-Syndicate loans on Olivetree are isolated debt structures
             where the lender(s) take on the credit risk. This has the combined
             benefits of allowing for unique loan structures and terms, while
@@ -48,17 +52,21 @@ export default function Faq() {
             cascading liquidations and oracle accuracy.
           </p>
         </div>
-        <div className="border-b-1 border-neutral3 max-w-[505px] my-[41px]">
-          <h2>What will my returns look like? Are yields volatile?</h2>
-          <p className="mt-[24px] mb-[42px]">
+        <div className="border-b-1 border-neutral3 max-w-[505px] mb-[41px] lg:my-[41px]">
+          <h2 className="text-greenDark font-semibold">
+            What will my returns look like? Are yields volatile?
+          </h2>
+          <p className="mt-[24px] mb-[42px] text-neutral6">
             Olivetree expects lenders on the platform to sustainably earn
             between 10 - 25+% fixed-interest APRs. Loans are funded and repaid
             in stablecoins.
           </p>
         </div>
-        <div className="max-w-[505px]">
-          <h2>Why is it safer to have no reliance on oracles?</h2>
-          <p className="mt-[24px] mb-[42px]">
+        <div className="lg:border-b-0 border-b-1 border-neutral3 max-w-[505px] mb-[41px]">
+          <h2 className="text-greenDark font-semibold">
+            Why is it safer to have no reliance on oracles?
+          </h2>
+          <p className="mt-[24px] mb-[42px] text-neutral6">
             As soon as any external reliance is introduced to a contract, it
             becomes less resilient as it takes on the liability of dependency.
             Oracles introduce external data and thus an exploitable
@@ -66,11 +74,11 @@ export default function Faq() {
           </p>
         </div>{" "}
         <div className="max-w-[505px]">
-          <h2>
+          <h2 className="text-greenDark font-semibold">
             If I am invested in an active loan, can I withdraw my capital before
             the loan matures?
           </h2>
-          <p className="mt-[24px] mb-[42px]">
+          <p className="mt-[24px] mb-[42px] text-neutral6">
             Yes, any lender may exit their position(s) prior to maturity. Using
             Olivetree's Secondaries Marketplace lenders can review/acquire/sell
             down any credit position.

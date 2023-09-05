@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
       <Navbar />
       <ConditionsPrivacyInfo
         title="Privacy"
-        date="Last Updated on May 15, 2023"
+        date="Last Updated on August 22, 2023"
         data={privacyData}
       />
       <Footer />

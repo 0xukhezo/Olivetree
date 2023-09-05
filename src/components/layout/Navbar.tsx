@@ -10,7 +10,7 @@ export default function Navbar() {
     <Disclosure as="nav" id="navbar">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl pt-5">
+          <div className="mx-auto pt-5">
             <div className="flex h-16 items-center justify-between">
               <div className="flex-shrink-0">
                 <Link href="/">
