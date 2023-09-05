@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Error() {
   return (
-    <main className="bg-neutral0 xl:py-[88px] px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]">
+    <main className="xl:py-[88px] px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]">
       <Navbar />
       <div className="text-center mt-[42px] lg:mt-[132px]">
         <h1 className="gradient-container404 font-bold text-[158px] lg:text-[258px]">
