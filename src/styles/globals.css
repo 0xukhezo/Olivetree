@@ -24,12 +24,20 @@
   }
 }
 
+.centered {  
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 2000px;
+    width: 100%;
+   
+  } 
+
+
 .underline-hover {
   position: relative;
   display: inline-block;
   transition: transform 0.35s ease-in-out; 
 }
-
 
 .underline-hover::before {
   content: "";

@@ -8,7 +8,7 @@ import Why from "@/components/sections/Why";
 
 export default function Home() {
   return (
-    <main>
+    <main className="centered">
       <Hero />
       <Why />
       <Early />

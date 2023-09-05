@@ -71,7 +71,7 @@ function Why() {
             alt="Your Company"
             width={578}
             height={454}
-            className="pulse-element md:block hidden my-auto"
+            className="pulse-element md:block hidden my-auto mx-auto"
           />
         </div>
 
@@ -81,7 +81,7 @@ function Why() {
             alt="Your Company"
             width={615}
             height={480}
-            className="mb-[100px] lg:mb-0"
+            className="mb-[100px] lg:mb-0 my-auto mx-auto"
           />
           <Paragraphs
             title={
@@ -130,7 +130,7 @@ function Why() {
             alt="Your Company"
             width={565}
             height={480}
-            className="pulse-element md:block hidden"
+            className="pulse-element md:block hidden my-auto mx-auto"
           />
         </div>
       </div>
