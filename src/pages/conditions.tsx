@@ -261,7 +261,7 @@ export default function Conditions() {
       <Navbar />
       <ConditionsPrivacyInfo
         title="Terms and Conditions"
-        date="Last Updated on May 15, 2023"
+        date="Last Updated on August 22, 2023"
         data={conditionsData}
       />
       <Footer />

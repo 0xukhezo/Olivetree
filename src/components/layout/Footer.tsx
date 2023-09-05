@@ -60,10 +60,22 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex justify-around sm:justify-start md:justify-end md:mt-[150px] mt-[24px] border-b-1 border-neutral6 text-neutral6 gap-x-[67px] pb-[17px]">
-        <a href="/privacy" target="_blank" className="hover:text-white">
+        <a
+          href="/privacy"
+          target="_blank"
+          className={` ${
+            route.route !== "/" ? "footer-links-pc" : "footer-links"
+          }`}
+        >
           Privacy Policy
         </a>
-        <a href="/conditions" target="_blank" className="hover:text-white">
+        <a
+          href="/conditions"
+          target="_blank"
+          className={` ${
+            route.route !== "/" ? "footer-links-pc" : "footer-links"
+          }`}
+        >
           Terms & Conditions
         </a>
       </div>

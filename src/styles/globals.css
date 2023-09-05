@@ -72,3 +72,22 @@
     #083C2F 100%
   );
 }
+
+.footer-links{
+  color:#3C4A47;
+  transition-property: color;
+  transition-duration: 2s;
+}
+
+.footer-links:hover{
+  color:white
+}
+
+.footer-links-pc{  color:  #7F8C89;
+  transition-property: color;
+  transition-duration: 2s;
+}
+
+.footer-links-pc:hover{
+  color:  #3C4A47;
+}
