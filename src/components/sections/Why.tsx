@@ -14,11 +14,11 @@ function Why() {
     >
       <div className="text-start md:text-center text-greenDark mb-[63px] xl:mb-[250px] mt-[100px] xl:mt-[135px]">
         <div className="gradient-container md:text-greenDark mb-[16px]">
-          <h1 className="text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight xl:min-h-[137px] font-spectral">
+          <h1 className="hiddenShowLeft text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight xl:min-h-[137px] font-spectral">
             Why Choose <br className="block md:hidden" /> Olivetree?
           </h1>
         </div>
-        <div className="grid md:grid-cols-2 mt-[48px] gap-x-[16px] ">
+        <div className="hiddenShowLeft grid md:grid-cols-2 mt-[48px] gap-x-[16px] ">
           <div>
             <h2 className="mb-[16px] text-greenDark text-lg font-semibold">
               For Borrowers
@@ -47,57 +47,61 @@ function Why() {
             alt="Your Company"
             width={578}
             height={454}
-            className="block md:hidden mb-[60px]"
+            className="hiddenShowRight block md:hidden mb-[60px]"
           />
-          <Paragraphs
-            title={
-              <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral">
-                Segregated Risk Arranged directly between borrowers & lenders.
-              </h1>
-            }
-            text={
-              <p className="text-greenDark">
-                When you finance with Olivertree, there are{" "}
-                <span className="font-bold">no oracle dependencies </span>
-                and you don’t share peer-to-pool risks. Olivetree loans are
-                trustless, arranged directly between the borrower and lenders;
-                risks are isolated and your assets are protected from forced
-                liquidations.
-              </p>
-            }
-          />
+          <div className="hiddenShowLeft">
+            <Paragraphs
+              title={
+                <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral ">
+                  Segregated Risk Arranged directly between borrowers & lenders.
+                </h1>
+              }
+              text={
+                <p className="text-greenDark">
+                  When you finance with Olivertree, there are{" "}
+                  <span className="font-bold">no oracle dependencies </span>
+                  and you don’t share peer-to-pool risks. Olivetree loans are
+                  trustless, arranged directly between the borrower and lenders;
+                  risks are isolated and your assets are protected from forced
+                  liquidations.
+                </p>
+              }
+            />
+          </div>
           <Image
             src={Segregated.src}
             alt="Your Company"
             width={578}
             height={454}
-            className="pulse-element md:block hidden my-auto mx-auto"
+            className="hiddenShowRight md:block hidden my-auto mx-auto"
           />
         </div>
 
         <div className="grid md:grid-cols-2 lg:my-[124px]">
           <Image
             src={Loans.src}
-            alt="Your Company"
+            alt="Loans"
             width={615}
             height={480}
-            className="mb-[100px] lg:mb-0 my-auto mx-auto"
+            className="hiddenShowLeft mb-[100px] lg:mb-0 my-auto mx-auto"
           />
-          <Paragraphs
-            title={
-              <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral">
-                Financing Flexibility. Loans Unique to You.
-              </h1>
-            }
-            text={
-              <p className="text-greenDark">
-                Borrows and lenders are dynamically matched, with optimally
-                tailored terms for each loan. Credit that borrowers couldn’t
-                find anywhere else, Olivetree provides loans unique to you and
-                your assets.
-              </p>
-            }
-          />
+          <div className="hiddenShowRight">
+            <Paragraphs
+              title={
+                <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral">
+                  Financing Flexibility. Loans Unique to You.
+                </h1>
+              }
+              text={
+                <p className="text-greenDark">
+                  Borrows and lenders are dynamically matched, with optimally
+                  tailored terms for each loan. Credit that borrowers couldn’t
+                  find anywhere else, Olivetree provides loans unique to you and
+                  your assets.
+                </p>
+              }
+            />
+          </div>
         </div>
         <div className="grid md:grid-cols-2">
           <Image
@@ -105,32 +109,34 @@ function Why() {
             alt="Your Company"
             width={578}
             height={454}
-            className="block md:hidden mb-[60px]"
-          />
-          <Paragraphs
-            title={
-              <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px]">
-                Fast.
-                <br /> Lending.
-                <br /> Reformed.
-              </h1>
-            }
-            text={
-              <p className="text-greenDark">
-                Olivetree supports any combination of arbitrary assets.
-                Borrowers can add leverage without fear of forced liquidations,
-                with loans that can be repaid at any time. Lenders gain access
-                to a new type of marketplace to deploy stablecoins at
-                attractive, fixed yields.
-              </p>
-            }
-          />
+            className="hiddenShowRight block md:hidden mb-[60px]"
+          />{" "}
+          <div className="hiddenShowLeft">
+            <Paragraphs
+              title={
+                <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px]">
+                  Fast.
+                  <br /> Lending.
+                  <br /> Reformed.
+                </h1>
+              }
+              text={
+                <p className="text-greenDark">
+                  Olivetree supports any combination of arbitrary assets.
+                  Borrowers can add leverage without fear of forced
+                  liquidations, with loans that can be repaid at any time.
+                  Lenders gain access to a new type of marketplace to deploy
+                  stablecoins at attractive, fixed yields.
+                </p>
+              }
+            />{" "}
+          </div>
           <Image
             src={Lens.src}
             alt="Your Company"
             width={565}
             height={480}
-            className="pulse-element md:block hidden my-auto mx-auto"
+            className="hiddenShowRight md:block hidden my-auto mx-auto"
           />
         </div>
       </div>
