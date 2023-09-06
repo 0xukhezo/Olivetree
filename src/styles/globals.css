@@ -109,6 +109,25 @@ html{
     overflow: hidden;
 } 
 
+.roadmap{
+  overflow: auto;
+}
+
+.hiddenStep{
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 2s;
+}
+
+.showStep{
+  opacity: 1;
+  filter: blur(0);
+}
+
+.grow-line{
+  width:100%;
+  transition: width 2s linear;
+}
 
 .underline-hover {
   position: relative;

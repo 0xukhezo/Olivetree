@@ -26,6 +26,7 @@ export default function Home() {
       navigationHeight + "px"
     );
   };
+
   const getObserver = () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
