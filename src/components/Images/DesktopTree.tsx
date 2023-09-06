@@ -164,7 +164,6 @@ function DesktopTree() {
         stroke-width="1.2807"
         className="row"
       />
-      //sPECIAL
       <path
         opacity="0.15"
         d="M272.907 81.8267C258.416 88.2672 221.053 103.205 204.881 129.71C182.629 166.18 216.201 198.777 170.66 219.017"
