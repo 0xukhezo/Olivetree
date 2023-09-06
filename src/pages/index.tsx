@@ -8,16 +8,6 @@ import Why from "@/components/sections/Why";
 import { useEffect } from "react";
 
 export default function Home() {
-  // const setScrollVar = () => {
-  //   const htmlElement = document.documentElement;
-  //   const percentOfSreenHeightScrolled =
-  //     htmlElement.scrollTop / htmlElement.clientHeight;
-  //   htmlElement.style.setProperty(
-  //     "--scroll",
-  //     Math.min(percentOfSreenHeightScrolled * 100, 100).toString()
-  //   );
-  // };
-
   const setScrollPadding = () => {
     const navigation = document.querySelector(".primary-navigation") as any;
     const navigationHeight = navigation.offsetHeight;
@@ -26,6 +16,7 @@ export default function Home() {
       navigationHeight + "px"
     );
   };
+
   const getObserver = () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -40,24 +31,20 @@ export default function Home() {
   };
 
   const setScrollLeft = () => {
-    const hiddenElements = document.querySelectorAll(".hiddenShowLeft") as any;
+    const hiddenElementsLeft = document.querySelectorAll(
+      ".hiddenShowLeft"
+    ) as any;
+    const hiddenElementsRight = document.querySelectorAll(
+      ".hiddenShowRight"
+    ) as any;
     const observer = getObserver();
-    hiddenElements.forEach((el: any) => observer.observe(el));
-  };
-
-  const setScrollRight = () => {
-    const hiddenElements = document.querySelectorAll(".hiddenShowRight") as any;
-    const observer = getObserver();
-    hiddenElements.forEach((el: any) => observer.observe(el));
+    hiddenElementsLeft.forEach((el: any) => observer.observe(el));
+    hiddenElementsRight.forEach((el: any) => observer.observe(el));
   };
 
   useEffect(() => {
     setScrollPadding();
     setScrollLeft();
-    setScrollRight();
-    // window.addEventListener("scroll", setScrollVar);
-    // window.addEventListener("resize", setScrollVar);
-    // setScrollVar();
   }, []);
 
   return (
