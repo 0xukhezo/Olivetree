@@ -8,7 +8,7 @@ import Paragraphs from "../Paragraphs/Paragraphs";
 
 function Why() {
   return (
-    <main
+    <div
       className="px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px] bg-white"
       id="why"
     >
@@ -140,7 +140,7 @@ function Why() {
           />
         </div>
       </div>
-    </main>
+    </div>
   );
 }
 
