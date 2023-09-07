@@ -13,8 +13,8 @@ function Why() {
       id="why"
     >
       <div className="text-start md:text-center text-greenDark mb-[63px] xl:mb-[250px] mt-[100px] xl:mt-[235px]">
-        <div className="gradient-container md:text-greenDark mb-[16px]">
-          <h1 className="hiddenShowLeft text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight xl:min-h-[137px] font-spectral">
+        <div className="hiddenShowRight gradient-container md:text-greenDark mb-[16px]">
+          <h1 className=" text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight xl:min-h-[137px] font-spectral">
             Why Choose <br className="block md:hidden" /> Olivetree?
           </h1>
         </div>
