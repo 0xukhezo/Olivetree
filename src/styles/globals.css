@@ -66,20 +66,33 @@ html{
   opacity:0;
   filter: blur(5px);
   transform: translateX(-100%);
-  transition: all 2s;
+  transition: all 2s 0.5s;
 }
 
 .hiddenShowRight{
   opacity:0;
   filter: blur(5px);
   transform: translateX(100%);
-  transition: all 2s;
+  transition: all 2s 0.5s;
+}
+
+.hiddenShowRotate{
+  opacity:0;
+  filter: blur(5px);
+  transform: rotateY(90deg);
+  transition: all 2s 0.5s;
 }
 
 .show{
   opacity:1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+.showRotate{
+  transform: rotateY(0deg);
+  opacity: 1;
+  filter: blur(0);
 }
 
 .full-screen-section {

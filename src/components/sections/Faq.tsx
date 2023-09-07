@@ -6,11 +6,11 @@ export default function Faq() {
       className="text-center px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px] mb-[57px]"
       id="faq"
     >
-      <h1 className="mt-[104px] mb-[80px] text-5xl font-semibold tracking-wide font-spectral text-greenDark">
+      <h1 className="mt-[104px] mb-[80px] text-5xl font-semibold tracking-wide font-spectral text-greenDark hiddenShowLeft">
         Common questions & answers
       </h1>
       <div className="grid lg:grid-cols-2 gap-x-[50px] justify-items-center text-start">
-        <div className="border-b-1 border-neutral3 max-w-[505px] mb-[41px] lg:mb-0">
+        <div className="border-b-1 border-neutral3 max-w-[505px] mb-[41px] lg:mb-0 hiddenShowLeft">
           <h2 className="text-greenDark font-semibold">
             How does taking out a loan on Olivetree compare to Aave or Compound?
           </h2>
@@ -25,7 +25,7 @@ export default function Faq() {
             any time.
           </p>
         </div>
-        <div className="border-b-1 border-neutral3 max-w-[505px]">
+        <div className="border-b-1 border-neutral3 max-w-[505px] hiddenShowRight">
           <h2 className="text-greenDark font-semibold">
             Why should I lend capital on Olivetree?
           </h2>
@@ -40,7 +40,7 @@ export default function Faq() {
             these attractive investments.
           </p>
         </div>
-        <div className="border-b-1 border-neutral3 max-w-[505px] my-[41px]">
+        <div className="border-b-1 border-neutral3 max-w-[505px] my-[41px] hiddenShowLeft">
           <h2 className="text-greenDark font-semibold">
             How am I protected from forced liquidations?
           </h2>
@@ -52,7 +52,7 @@ export default function Faq() {
             cascading liquidations and oracle accuracy.
           </p>
         </div>
-        <div className="border-b-1 border-neutral3 max-w-[505px] mb-[41px] lg:my-[41px]">
+        <div className="border-b-1 border-neutral3 max-w-[505px] mb-[41px] lg:my-[41px] hiddenShowRight">
           <h2 className="text-greenDark font-semibold">
             What will my returns look like? Are yields volatile?
           </h2>
@@ -62,7 +62,7 @@ export default function Faq() {
             in stablecoins.
           </p>
         </div>
-        <div className="lg:border-b-0 border-b-1 border-neutral3 max-w-[505px] mb-[41px]">
+        <div className="lg:border-b-0 border-b-1 border-neutral3 max-w-[505px] mb-[41px] hiddenShowLeft">
           <h2 className="text-greenDark font-semibold">
             Why is it safer to have no reliance on oracles?
           </h2>
@@ -73,7 +73,7 @@ export default function Faq() {
             vulnerability.
           </p>
         </div>{" "}
-        <div className="max-w-[505px]">
+        <div className="max-w-[505px] hiddenShowRight">
           <h2 className="text-greenDark font-semibold">
             If I am invested in an active loan, can I withdraw my capital before
             the loan matures?

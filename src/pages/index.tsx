@@ -27,13 +27,13 @@ export default function Home() {
     );
   };
 
-  const getObserver = () => {
+  const getObserver = (type: string) => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("show");
+          entry.target.classList.add(type);
         } else {
-          entry.target.classList.remove("show");
+          entry.target.classList.remove(type);
         }
       });
     });
@@ -47,9 +47,14 @@ export default function Home() {
     const hiddenElementsRight = document.querySelectorAll(
       ".hiddenShowRight"
     ) as any;
-    const observer = getObserver();
+    const hiddenElementsRotate = document.querySelectorAll(
+      ".hiddenShowRotate"
+    ) as any;
+    const observer = getObserver("show");
     hiddenElementsLeft.forEach((el: any) => observer.observe(el));
     hiddenElementsRight.forEach((el: any) => observer.observe(el));
+    const rotateObserver = getObserver("showRotate");
+    hiddenElementsRotate.forEach((el: any) => rotateObserver.observe(el));
   };
 
   useEffect(() => {
