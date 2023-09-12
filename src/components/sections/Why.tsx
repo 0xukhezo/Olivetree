@@ -1,9 +1,13 @@
+// React
 import React from "react";
+// Next
 import Image from "next/image";
+// Components
+import Paragraphs from "../Paragraphs/Paragraphs";
+// Images
 import Segregated from "../../../public/Segregated.svg";
 import Lens from "../../../public/Lens.svg";
 import Loans from "../../../public/Loans.svg";
-import Paragraphs from "../Paragraphs/Paragraphs";
 
 function Why() {
   return (

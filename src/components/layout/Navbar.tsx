@@ -1,8 +1,11 @@
-import Image from "next/image";
-import { Disclosure } from "@headlessui/react";
-import Logo from "../../../public/Logo.svg";
+// Next
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
+// Icons
+import { Disclosure } from "@headlessui/react";
+// Images
+import Logo from "../../../public/Logo.svg";
 
 export default function Navbar() {
   const route = useRouter();

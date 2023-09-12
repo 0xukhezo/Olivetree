@@ -1,7 +1,9 @@
+// React
+import React from "react";
+// Components
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import ConditionsPrivacyInfo from "@/components/Paragraphs/ConditionsPrivacyInfo";
-import React from "react";
 
 const privacyData = [
   {

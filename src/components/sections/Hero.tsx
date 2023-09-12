@@ -1,4 +1,6 @@
+// React
 import React, { useEffect, useState } from "react";
+// Components
 import Navbar from "../layout/Navbar";
 import Paragraphs from "../Paragraphs/Paragraphs";
 import DesktopTree from "../Images/DesktopTree";

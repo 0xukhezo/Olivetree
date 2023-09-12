@@ -1,4 +1,6 @@
+// React
 import React, { useEffect, useRef, useState } from "react";
+// Images
 import RoadmapTree from "../../../public/RoadmapTree.svg";
 
 export default function Roadmap() {

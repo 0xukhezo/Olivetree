@@ -1,8 +1,11 @@
+// React
 import React from "react";
+// Next
 import Image from "next/image";
+import { useRouter } from "next/router";
+// Images
 import WhiteLogo from "../../../public/WhiteLogo.svg";
 import Logo from "../../../public/Logo.svg";
-import { useRouter } from "next/router";
 
 export default function Footer() {
   const route = useRouter();
