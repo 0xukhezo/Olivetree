@@ -47,9 +47,7 @@ export default function Navbar() {
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-9 text-neutral6 items-center">
-                <a href="/contact" className="underline underline-offset-4">
-                  Contact
-                </a>
+                <a href="/contact">Contact</a>
                 <a href="https://twitter.com/olivetreecredit" target="_blank">
                   <button className="border-2 border-neutral3 px-3.5 py-3 rounded-lg hover:border-neutral6">
                     Join our X

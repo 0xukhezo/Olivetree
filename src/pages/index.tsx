@@ -32,8 +32,6 @@ export default function Home() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add(type);
-        } else {
-          entry.target.classList.remove(type);
         }
       });
     });
@@ -48,13 +46,13 @@ export default function Home() {
       ".hiddenShowRight"
     ) as any;
     const hiddenElementsRotate = document.querySelectorAll(
-      ".hiddenShowRotate"
+      ".hiddenShowUp"
     ) as any;
     const observer = getObserver("show");
     hiddenElementsLeft.forEach((el: any) => observer.observe(el));
     hiddenElementsRight.forEach((el: any) => observer.observe(el));
-    const rotateObserver = getObserver("showRotate");
-    hiddenElementsRotate.forEach((el: any) => rotateObserver.observe(el));
+    const upObserver = getObserver("showUp");
+    hiddenElementsRotate.forEach((el: any) => upObserver.observe(el));
   };
 
   useEffect(() => {
@@ -67,7 +65,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="centered">
+    <main>
       <Hero />
       <Why />
       <Early />

@@ -21,6 +21,7 @@ const config: Config = {
       borderWidth: { 1: "1px" },
       screens: {
         roadmap: "907px",
+        treeDesktop: "1128px",
       },
       fontFamily: {
         spectral: ["Spectral", "regular"],
