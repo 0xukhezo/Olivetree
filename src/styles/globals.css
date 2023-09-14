@@ -73,6 +73,11 @@
     stroke-dashoffset: 0;
   }
 }
+@keyframes showLine-animation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 
 @keyframes loans-line-animation {
   to{
@@ -258,9 +263,12 @@ html{
 }
 
 .showLine{
-  opacity: 1;
-  transition: opacity 0.4s;
+  stroke-dashoffset: 1000;
+  opacity:1;
+  stroke-dasharray: 1000;
+  animation: showLine-animation 0.8s linear forwards;
 }
+
 
 .centered {  
     margin-left: auto;
