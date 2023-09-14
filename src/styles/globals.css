@@ -4,19 +4,35 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Pathway+Gothic+One&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-@media (min-width: 1250px) {
+@media (max-width: 1024px) {
+  .hiddenShowLeft{
+    opacity:0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s 0.05s;
+  }
+  
+  .hiddenShowRight{
+    opacity:0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s 0.05s;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hiddenShowLeft{
+    opacity:0;
+    filter: blur(5px);
+    transform: translatex(-100%);
+    transition: all 1.2s 0.1s;
+  }
+  
   .hiddenShowRight{
     opacity:0;
     filter: blur(5px);
     transform: translateX(100%);
-    transition: all 2s 0.2s;
-  }
-
-  .hiddenShowLeft{
-    opacity:0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 2s 0.2s;
+    transition: all 1.2s 0.1s;
   }
 }
 
@@ -58,23 +74,114 @@
   }
 }
 
+@keyframes loans-line-animation {
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes graph-rect-animation {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes graph1-animation {
+  from {
+    height: 0%;
+  }
+  to{
+    height: 20%;
+  }
+}
+
+@keyframes graph2-animation {
+  from {
+    height: 0%;
+  }
+  to{
+    height: 18%;
+  }
+}
+
+@keyframes graph3-animation {
+  from {
+    height: 0%;
+  }
+  to{
+    height: 16%;
+  }
+}
+
+@keyframes graph4-animation {
+  from {
+    height: 0%;
+  }
+  to{
+    height: 27%;
+  }
+}
+
+@keyframes graph5-animation {
+  from {
+    height: 0%;
+  }
+  to{
+    height: 28%;
+  }
+}
+
+@keyframes graph6-animation {
+  from {
+    height: 0%;
+  }
+  to{
+    height: 33%;
+  }
+}
+
+#graph1{
+  height: 20%;
+  animation: graph1-animation 2s linear forwards;
+    animation-delay: 2.5s;
+}
+
+#graph2{
+  height: 18%;
+  animation: graph2-animation 2s linear forwards;
+    animation-delay: 2.5s;
+}
+
+#graph3{
+  height: 16%;
+  animation: graph3-animation 2s linear forwards;
+    animation-delay: 2.5s;
+}
+
+#graph4{
+  height: 27%;
+  animation: graph4-animation 2s linear forwards;
+    animation-delay: 2.5s;
+}
+
+#graph5{
+  height: 28%;
+  animation: graph5-animation 2s linear forwards;
+    animation-delay: 2.5s;
+}
+
+#graph6{
+  height: 33%;
+  animation: graph6-animation 2s linear forwards;
+    animation-delay: 2.5s;
+}
+
 html{
   scroll-behavior: smooth;
   scroll-padding: var(--scroll-padding, 5rem);
-}
-
-.hiddenShowLeft{
-  opacity:0;
-  filter: blur(5px);
-  transform: translateY(100%);
-  transition: all 1s 0.2s;
-}
-
-.hiddenShowRight{
-  opacity:0;
-  filter: blur(5px);
-  transform: translateY(100%);
-  transition: all 1s 0.2s;
 }
 
 .hiddenShowUp{
@@ -109,11 +216,50 @@ html{
   animation-iteration-count: infinite;
 }
 
+.loans-line{
+  stroke-dashoffset: -500;
+  stroke-dasharray: 1000;
+  animation: loans-line-animation 1.2s linear forwards;
+  animation-delay: 2.3s;
+}
+
+.loans-circle{
+  stroke-dashoffset: -500;
+  stroke-dasharray: 1000;
+  stroke-width: 1.5px;
+  animation: loans-line-animation 1.2s linear forwards;
+  animation-delay: 2.3s;
+}
+
 .rowReverse{
   stroke-dashoffset: 100;
   stroke-dasharray: 50;
   animation: rowReverse-animation 12s linear forwards;
   animation-iteration-count: infinite;
+}
+
+.graph-rect{
+  opacity: 0;
+  animation: graph-rect-animation 2s linear forwards;
+  animation-delay: 2.5s;
+ }
+
+ .hiddenCard{
+    opacity: 0;
+ }
+
+ .showCard{
+  opacity: 1; 
+  transition: opacity 0.4s;
+}
+
+ .hiddenLine{
+  opacity: 0;
+}
+
+.showLine{
+  opacity: 1;
+  transition: opacity 0.4s;
 }
 
 .centered {  
@@ -139,15 +285,35 @@ html{
   filter: blur(0);
 }
 
+.hiddenStepText{
+  transform : scale(1);
+  transition: transform 0.8s;
+}
+
+.bigStep{
+  transform : scale(1.2);
+  transition: transform 0.8s;
+}
+
+.logo{
+  transform : scale(1);
+  transition: transform 0.8s;
+}
+
+.logo:hover{
+  transform : scale(1.2);
+  transition: transform 0.8s;
+}
+
 .grow-line{
   width:100%;
-  transition: width 1s linear;
+  transition: width 0.8s linear;
 }
 
 .underline-hover {
   position: relative;
   display: inline-block;
-  transition: transform 0.35s ease-in-out; 
+  transition: transform 0.4s ease-in-out; 
 }
 
 .underline-hover::before {
@@ -156,11 +322,11 @@ html{
   bottom: -2px; 
   left: 0;
   right: 100%;
-  height: 1.5px; 
+  height: 2px; 
   background-color: #3C4A47; 
   transform-origin: left;
   transform: scaleX(0); 
-  transition: transform 0.35s ease-in-out; 
+  transition: transform 0.4s ease-in-out; 
 }
 
 .underline-hover:hover::before {
@@ -194,20 +360,37 @@ html{
 }
 
 .footer-links{
-  color:#d1d1d1;
+  color:#a6a5a5;
   transition-property: color;
-  transition-duration: 2s;
+  transition-duration: 0.8s;
 }
 
 .footer-links:hover{
   color:white
 }
 
-.footer-links-pc{  color:  #7F8C89;
+.footer-links-pc{  
+  color:  #a6a5a5;
   transition-property: color;
-  transition-duration: 2s;
+  transition-duration: 0.8s;
 }
 
 .footer-links-pc:hover{
   color:  #3C4A47;
+}
+
+
+.btn {
+  transition: background 0.6s, color 0.6s 0.1s;
+  color: white;
+  background-position: center;
+  background-image: radial-gradient(circle,transparent 1%,#083C2F 1%);
+  background-size: 10%;
+}
+
+.btn:hover {
+  background-color: #C9F269;
+  color: #083C2F;
+  transition: all 0.8s;
+  background-size: 12000%;
 }

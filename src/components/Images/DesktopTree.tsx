@@ -1,11 +1,31 @@
 // React
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function DesktopTree() {
+  const [width, setWidth] = useState<number>(821);
+
+  const setWidthConst = () => {
+    const withElement = document.documentElement.clientWidth;
+
+    if (withElement > 1600) {
+      setWidth(821);
+    } else if (1250 < withElement && withElement <= 1600) {
+      setWidth(withElement / 2);
+    } else {
+      setWidth(withElement / 1.8);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", setWidthConst);
+    window.addEventListener("resize", setWidthConst);
+    setWidthConst();
+  }, []);
+
   return (
     <div>
       <svg
-        width="821"
+        width={width}
         height="406"
         viewBox="0 0 821 406"
         fill="none"

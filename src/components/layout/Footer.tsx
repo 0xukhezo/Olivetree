@@ -31,32 +31,34 @@ export default function Footer() {
             <p className="mt-[25px]">The next-generation lending protocol.</p>
           </div>
           <div>
-            <h1>Company</h1>
+            <h1 className="font-semibold">Company</h1>
             <p
               className={`md:mt-[25px] mt-[12px] ${
-                route.route !== "/" ? "text-neutral6" : "text-neutral3"
+                route.route !== "/" ? "footer-links-pc" : "footer-links"
               }`}
             >
               Careers (Coming Soon)
             </p>
           </div>
           <div>
-            <h1 className="md:mb-[25px] mb-[12px]">Support</h1>
+            <h1 className="md:mb-[25px] mb-[12px] font-semibold">Support</h1>
             <a
+              href="/contact"
+              target="_blank"
               className={`${
-                route.route !== "/" ? "text-neutral6" : "text-neutral3"
+                route.route !== "/" ? "footer-links-pc" : "footer-links"
               }`}
             >
               Contact Us
             </a>
           </div>
           <div>
-            <h1 className="md:mb-[25px] mb-[12px]">Follow Us</h1>
+            <h1 className="md:mb-[25px] mb-[12px] font-semibold">Follow Us</h1>
             <a
               href="https://twitter.com/olivetreecredit"
               target="_blank"
               className={`${
-                route.route !== "/" ? "text-neutral6" : "text-neutral3"
+                route.route !== "/" ? "footer-links-pc" : "footer-links"
               }`}
             >
               X

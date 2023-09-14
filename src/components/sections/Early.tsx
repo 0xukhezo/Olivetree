@@ -20,7 +20,7 @@ export default function Early() {
             href="https://docs.google.com/forms/d/e/1FAIpQLSe84P05Vdh9xEoG1uM9ogo7qPwYv2KCHh8RFvsJOROGOPPvsA/viewform"
             target="_blank"
           >
-            <button className="mt-[32px] lg:mt-0 p-5 bg-greenDark text-white rounded-lg w-[292px] md:w-[200px] lg:w-[162px]">
+            <button className="mt-[32px] lg:mt-0 p-5 bg-greenDark text-white rounded-lg w-[292px] md:w-[200px] lg:w-[190px]">
               Join us a Lender
             </button>
           </a>

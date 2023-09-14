@@ -4,14 +4,16 @@ import React from "react";
 import Image from "next/image";
 // Components
 import Paragraphs from "../Paragraphs/Paragraphs";
+import Loans from "../Images/Loans";
+import Segreged from "../Images/Segregated";
 // Images
-import Segregated from "../../../public/Segregated.svg";
 import Lens from "../../../public/Lens.svg";
-import Loans from "../../../public/Loans.svg";
+import LoansImage from "../../../public/Loans.svg";
+import SegregatedImage from "../../../public/Segregated.svg";
 
 function Why() {
   return (
-    <div className=" bg-white" id="why">
+    <div className="bg-white" id="why">
       <div className="centered px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]">
         <div className="text-start md:text-center text-greenDark mb-[63px] xl:mb-[250px] mt-[100px] xl:mt-[235px] hiddenShowUp">
           <div className="gradient-container md:text-greenDark mb-[16px]">
@@ -42,15 +44,15 @@ function Why() {
           </div>
         </div>
         <div>
-          <div className="grid md:grid-cols-2">
+          <div className="grid lg:grid-cols-2 ">
             <Image
-              src={Segregated.src}
+              src={SegregatedImage.src}
               alt="Your Company"
               width={578}
               height={454}
-              className="hiddenShowRight block md:hidden mb-[60px]"
+              className="hiddenShowRight block lg:hidden mx-auto mb-[60px]"
             />
-            <div className="hiddenShowLeft max-w-[500px]">
+            <div className="hiddenShowLeft max-w-[500px] mx-auto">
               <Paragraphs
                 title={
                   <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral ">
@@ -70,24 +72,23 @@ function Why() {
                 }
               />
             </div>
+            <div className="hiddenShowRight lg:block hidden my-auto mx-auto">
+              <Segreged />
+            </div>
+          </div>
+
+          <div className="grid lg:grid-cols-2 lg:my-[124px] items-center">
+            <div className="hiddenShowLeft lg:block hidden mb-[100px] lg:mb-0 my-auto mx-auto">
+              <Loans />
+            </div>
             <Image
-              src={Segregated.src}
+              src={LoansImage.src}
               alt="Your Company"
               width={578}
               height={454}
-              className="hiddenShowRight md:block hidden my-auto mx-auto"
-            />
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:my-[124px] items-center">
-            <Image
-              src={Loans.src}
-              alt="Loans"
-              width={615}
-              height={480}
-              className="hiddenShowLeft mb-[100px] lg:mb-0 my-auto mx-auto"
-            />
-            <div className="hiddenShowRight max-w-[500px]">
+              className="hiddenShowRight block lg:hidden mx-auto mb-[60px]"
+            />{" "}
+            <div className="hiddenShowRight max-w-[500px] mx-auto">
               <Paragraphs
                 title={
                   <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral">
@@ -105,18 +106,18 @@ function Why() {
               />
             </div>
           </div>
-          <div className="grid md:grid-cols-2">
+          <div className="grid lg:grid-cols-2">
             <Image
               src={Lens.src}
               alt="Your Company"
               width={578}
               height={454}
-              className="hiddenShowRight block md:hidden mb-[60px]"
+              className="hiddenShowRight block lg:hidden mx-auto"
             />{" "}
-            <div className="hiddenShowLeft max-w-[500px]">
+            <div className="hiddenShowLeft max-w-[500px] mx-auto">
               <Paragraphs
                 title={
-                  <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px]">
+                  <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral">
                     Fast.
                     <br /> Lending.
                     <br /> Reformed.
@@ -138,7 +139,7 @@ function Why() {
               alt="Your Company"
               width={565}
               height={480}
-              className="hiddenShowRight md:block hidden my-auto mx-auto"
+              className="hiddenShowRight lg:block hidden my-auto mx-auto"
             />
           </div>
         </div>

@@ -19,6 +19,10 @@ export default function Roadmap() {
     const thirdStep = document.getElementById("thirdStep") as any;
     const htmlElement = document.documentElement;
     const hiddenElements = document.querySelectorAll(".hiddenStep") as any;
+    const hiddenElementsText = document.querySelectorAll(
+      ".hiddenStepText"
+    ) as any;
+
     const line = document.getElementById("line") as any;
 
     setWidthSteps(firstStep?.getBoundingClientRect().right - 20);
@@ -28,22 +32,28 @@ export default function Roadmap() {
     } else {
       setTimeout(() => {
         hiddenElements[0].classList.add("showStep");
-      }, 1000);
+        hiddenElementsText[0].classList.add("bigStep");
+      }, 800);
       setTimeout(() => {
         setWidthSteps(secondStep?.getBoundingClientRect().right - 20);
         setTimeout(() => {
+          hiddenElementsText[0].classList.remove("bigStep");
           hiddenElements[1].classList.add("showStep");
-        }, 1000);
-      }, 2000);
+          hiddenElementsText[1].classList.add("bigStep");
+        }, 800);
+      }, 1800);
       setTimeout(() => {
         setWidthSteps(thirdStep?.getBoundingClientRect().right - 20);
         setTimeout(() => {
+          hiddenElementsText[1].classList.remove("bigStep");
           hiddenElements[2].classList.add("showStep");
-        }, 1000);
-      }, 4000);
+          hiddenElementsText[2].classList.add("bigStep");
+        }, 800);
+      }, 3600);
       setTimeout(() => {
         setWidthSteps(htmlElement.clientWidth);
-      }, 6000);
+        hiddenElementsText[2].classList.remove("bigStep");
+      }, 5400);
     }
   };
 
@@ -83,7 +93,7 @@ export default function Roadmap() {
           <h1 className="text-5xl md:text-6xl xl:text-7xl font-semibold tracking-wide font-spectral">
             Roadmap
           </h1>
-          <p className="max-w-[450px] mx-auto mt-[16px]">
+          <p className="max-w-[450px] mx-auto mt-[16px] text-xl">
             We are in the early stages of a seminal evolution in credit,
             bringing superior financing solutions to lenders and borrowers.
           </p>
@@ -97,7 +107,7 @@ export default function Roadmap() {
               className={`flex justify-center items-center min-h-[90px] relative px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]`}
               style={{ width: `${width}px` }}
             >
-              <div className="grid md:grid-cols-3 z-40 mt-[170px] roadmap:mt-[148px] lg:mt-[145px] opacity-100">
+              <div className="grid md:grid-cols-3 z-40 mt-[170px] roadmap:mt-[148px] lg:mt-[160px] opacity-100">
                 <div className="hiddenStep">
                   <div
                     id="firstStep"
@@ -105,11 +115,11 @@ export default function Roadmap() {
                   >
                     01
                   </div>
-                  <div className="p-[20px] flex justify-center items-center flex-col">
-                    <h1 className="font-spectral font-bold text-lg">
+                  <div className="hiddenStepText p-[20px] flex justify-center items-center flex-col">
+                    <h1 className="font-spectral font-bold text-2xl tracking-wider">
                       Originations
                     </h1>
-                    <p className="max-w-[365px] mt-[15px]">
+                    <p className="max-w-[365px] mt-[15px] text-xl">
                       Borrow against any on-chain assets, at hyper-efficient
                       fixed rates, while protected from forced liquidations
                     </p>
@@ -122,11 +132,11 @@ export default function Roadmap() {
                   >
                     02
                   </div>
-                  <div className="p-[20px] flex justify-center items-center flex-col">
-                    <h1 className="font-spectral font-bold text-lg">
+                  <div className="hiddenStepText p-[20px] flex justify-center items-center flex-col">
+                    <h1 className="font-spectral font-bold text-2xl tracking-wider">
                       Secondaries Marketplace
                     </h1>
-                    <p className="max-w-[365px] mt-[15px]">
+                    <p className="max-w-[365px] mt-[15px] text-xl">
                       For participants (or strategies) that require rapid
                       entering and exiting positions to farm yields
                     </p>
@@ -139,11 +149,11 @@ export default function Roadmap() {
                   >
                     03
                   </div>
-                  <div className="p-[20px] flex justify-center items-center flex-col">
-                    <h1 className="font-spectral  font-bold text-lg">
+                  <div className="hiddenStepText p-[20px] flex justify-center items-center flex-col">
+                    <h1 className="font-spectral  font-bold text-2xl tracking-wider">
                       Credit Protection
                     </h1>
-                    <p className="max-w-[365px] mt-[15px]">
+                    <p className="max-w-[365px] mt-[15px] text-xl">
                       Market participants can hedge against the creditworthiness
                       of any debt instrument on Olivetree
                     </p>

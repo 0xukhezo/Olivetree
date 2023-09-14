@@ -14,12 +14,16 @@ function Hero() {
     const gap = htmlElementWidth - 1590;
 
     if (gap < 0) {
-      setGapX(0);
+      setGapX(100);
     } else {
       setGapX(gap);
     }
     if (gap > 400) {
       setGapX(400);
+    }
+
+    if (document.documentElement.clientWidth <= 1024) {
+      setGapX(0);
     }
   };
 
@@ -45,22 +49,22 @@ function Hero() {
                 </h1>
               }
               text={
-                <p className="text-greenDark">
+                <p className="text-greenDark text-xl">
                   Olivetree is a generalized credit protocol to borrow against
                   any combination of arbitrary assets, free from forced
                   liquidations and oracle dependencies.
                 </p>
               }
             />
-            <button className="p-5 text-white bg-greenDark rounded-lg mt-[32px]">
+            <button className="btn p-5 rounded-lg mt-[32px] sm:min-w-[300px] min-w-[180px]">
               Join our X
             </button>
           </div>
           <div className="hiddenShowRight w-full mt-[70px] xl:mt-[191px] items-center flex">
-            <div className="treeWrapper lg:block hidden ">
+            <div className="lg:block hidden ">
               <DesktopTree />
             </div>
-            <div className="treeWrapper block lg:hidden mx-auto  relative left-[-50px]">
+            <div className="block lg:hidden mx-auto relative left-[-50px]">
               <DesktopTreeMobile />
             </div>
           </div>

@@ -15,7 +15,7 @@ export default function Next() {
               superior financing capabilities on-chain
             </p>
           </div>
-          <button className="mt-[32px] lg:mt-0 px-5 py-3 bg-greenLight text-greenDark rounded-lg w-[292px] md:w-[200px] lg:w-[162px] font-semibold">
+          <button className="btn mt-[32px] lg:mt-0 px-5 py-3 bg-greenLight text-greenDark rounded-lg w-[292px] md:w-[200px] lg:w-[162px] font-semibold">
             Work with Us
           </button>
         </div>
