@@ -55,10 +55,12 @@ function Hero() {
                   liquidations and oracle dependencies.
                 </p>
               }
-            />
-            <button className="btn p-5 rounded-lg mt-[32px] sm:min-w-[300px] min-w-[180px]">
-              Join our X
-            </button>
+            />{" "}
+            <a href="https://twitter.com/olivetreecredit" target="_blank">
+              <button className="btn p-5 rounded-lg mt-[32px] sm:min-w-[300px] min-w-[180px]">
+                Join our X
+              </button>{" "}
+            </a>
           </div>
           <div className="hiddenShowRight w-full mt-[70px] xl:mt-[191px] items-center flex">
             <div className="lg:block hidden ">
