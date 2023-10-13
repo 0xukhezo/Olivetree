@@ -9,7 +9,7 @@ import Logo from "../../../public/Logo.svg";
 
 export default function Navbar() {
   const router = useRouter();
-  console.log(router);
+
   return (
     <Disclosure as="nav" id="navbar" className="primary-navigation">
       <>
@@ -53,7 +53,11 @@ export default function Navbar() {
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-9 text-neutral6 items-center">
                 <button
-                  onClick={() => router.push("hello@inclusiolabs.com")}
+                  onClick={() =>
+                    router.push(
+                      "mailto:hello@inclusiolabs.com?subject=Learn%20more%20about%20Olivetree"
+                    )
+                  }
                   className="underline-hover"
                 >
                   Contact Us

@@ -43,7 +43,11 @@ export default function Footer() {
           <div>
             <h1 className="md:mb-[25px] mb-[12px] font-semibold">Support</h1>
             <button
-              onClick={() => router.push("hello@inclusiolabs.com")}
+              onClick={() =>
+                router.push(
+                  "mailto:hello@inclusiolabs.com?subject=Learn%20more%20about%20Olivetree"
+                )
+              }
               className={`${
                 router.route !== "/" ? "footer-links-pc" : "footer-links"
               }`}
