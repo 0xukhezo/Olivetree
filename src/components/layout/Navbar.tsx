@@ -8,7 +8,8 @@ import { Disclosure } from "@headlessui/react";
 import Logo from "../../../public/Logo.svg";
 
 export default function Navbar() {
-  const route = useRouter();
+  const router = useRouter();
+  console.log(router);
   return (
     <Disclosure as="nav" id="navbar" className="primary-navigation">
       <>
@@ -29,19 +30,19 @@ export default function Navbar() {
               <div className="hidden sm:ml-6 md:block">
                 <div className="flex space-x-10 text-neutral6">
                   <Link
-                    href={route.route !== "/" ? "/#why" : "#why"}
+                    href={router.route !== "/" ? "/#why" : "#why"}
                     className="underline-hover"
                   >
                     Why
                   </Link>
                   <Link
-                    href={route.route !== "/" ? "/#roadmap" : "#roadmap"}
+                    href={router.route !== "/" ? "/#roadmap" : "#roadmap"}
                     className="underline-hover"
                   >
                     Roadmap
                   </Link>
                   <Link
-                    href={route.route !== "/" ? "/#faq" : "#faq"}
+                    href={router.route !== "/" ? "/#faq" : "#faq"}
                     className="underline-hover"
                   >
                     FAQ
@@ -51,9 +52,12 @@ export default function Navbar() {
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-9 text-neutral6 items-center">
-                <a href="/contact" className="underline-hover">
-                  Contact
-                </a>
+                <button
+                  onClick={() => router.push("hello@inclusiolabs.com")}
+                  className="underline-hover"
+                >
+                  Contact Us
+                </button>
                 <a href="https://twitter.com/olivetreecredit" target="_blank">
                   <button className="btn text-white border-2 border-neutral3 px-3.5 py-3 rounded-lg hover:border-neutral6">
                     Join our X
@@ -65,11 +69,11 @@ export default function Navbar() {
         </div>
         <div className="md:hidden fixed inset-x-0 bottom-0 w-full z-50 ">
           <div className="mx-5 flex items-center justify-between mb-[25px] bg-greenDark text-white p-5 rounded-lg border-white border-1">
-            <Link href={route.route !== "/" ? "/#why" : "#why"}>Why</Link>
-            <Link href={route.route !== "/" ? "/#roadmap" : "#roadmap"}>
+            <Link href={router.route !== "/" ? "/#why" : "#why"}>Why</Link>
+            <Link href={router.route !== "/" ? "/#roadmap" : "#roadmap"}>
               Roadmap
             </Link>
-            <Link href={route.route !== "/" ? "/#faq" : "#faq"}>FAQ</Link>
+            <Link href={router.route !== "/" ? "/#faq" : "#faq"}>FAQ</Link>
           </div>
         </div>
       </>

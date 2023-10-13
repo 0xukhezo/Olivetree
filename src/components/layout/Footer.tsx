@@ -8,12 +8,12 @@ import WhiteLogo from "../../../public/WhiteLogo.svg";
 import Logo from "../../../public/Logo.svg";
 
 export default function Footer() {
-  const route = useRouter();
+  const router = useRouter();
 
   return (
     <div
       className={`${
-        route.route !== "/"
+        router.route !== "/"
           ? "bg-white text-greenDark"
           : "bg-greenDark text-white"
       }  pt-[57px] xl:pt-[114px] px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]`}
@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-x-[55px] gap-y-[36px] md:gap-y-0 md:justify-items-center">
           <div>
             <Image
-              src={route.route !== "/" ? Logo.src : WhiteLogo.src}
+              src={router.route !== "/" ? Logo.src : WhiteLogo.src}
               alt="Your Company"
               width={175}
               height={50}
@@ -34,7 +34,7 @@ export default function Footer() {
             <h1 className="font-semibold">Company</h1>
             <p
               className={`md:mt-[25px] mt-[12px] ${
-                route.route !== "/" ? "footer-links-pc" : "footer-links"
+                router.route !== "/" ? "footer-links-pc" : "footer-links"
               }`}
             >
               Careers (Coming Soon)
@@ -42,15 +42,14 @@ export default function Footer() {
           </div>
           <div>
             <h1 className="md:mb-[25px] mb-[12px] font-semibold">Support</h1>
-            <a
-              href="/contact"
-              target="_blank"
+            <button
+              onClick={() => router.push("hello@inclusiolabs.com")}
               className={`${
-                route.route !== "/" ? "footer-links-pc" : "footer-links"
+                router.route !== "/" ? "footer-links-pc" : "footer-links"
               }`}
             >
               Contact Us
-            </a>
+            </button>
           </div>
           <div>
             <h1 className="md:mb-[25px] mb-[12px] font-semibold">Follow Us</h1>
@@ -58,7 +57,7 @@ export default function Footer() {
               href="https://twitter.com/olivetreecredit"
               target="_blank"
               className={`${
-                route.route !== "/" ? "footer-links-pc" : "footer-links"
+                router.route !== "/" ? "footer-links-pc" : "footer-links"
               }`}
             >
               X
@@ -70,7 +69,7 @@ export default function Footer() {
             href="/privacy"
             target="_blank"
             className={` ${
-              route.route !== "/" ? "footer-links-pc" : "footer-links"
+              router.route !== "/" ? "footer-links-pc" : "footer-links"
             }`}
           >
             Privacy Policy
@@ -79,7 +78,7 @@ export default function Footer() {
             href="/conditions"
             target="_blank"
             className={` ${
-              route.route !== "/" ? "footer-links-pc" : "footer-links"
+              router.route !== "/" ? "footer-links-pc" : "footer-links"
             }`}
           >
             Terms & Conditions
@@ -87,7 +86,7 @@ export default function Footer() {
         </div>
         <div
           className={`pb-[100px] pt-[42px] ${
-            route.route !== "/" ? "text-greenDark" : "text-white"
+            router.route !== "/" ? "text-greenDark" : "text-white"
           } text-center`}
         >
           Copyright © 2023 Inclusio Labs. All Rights Reserved

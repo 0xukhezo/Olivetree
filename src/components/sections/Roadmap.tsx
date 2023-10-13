@@ -98,7 +98,7 @@ export default function Roadmap() {
             bringing superior financing solutions to lenders and borrowers.
           </p>
         </div>
-        <div id="roadmap">
+        <div id="roadmap" className="mt-20 md:mt-0">
           <div
             className="bg-cover bg-center flex items-center justify-center flex-col max-w-[739px] h-[739px] mx-auto mt-[-100px]"
             style={{ backgroundImage: `url('${RoadmapTree.src}')` }}
@@ -107,7 +107,7 @@ export default function Roadmap() {
               className={`flex justify-center items-center min-h-[90px] relative px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]`}
               style={{ width: `${width}px` }}
             >
-              <div className="grid md:grid-cols-3 z-40 mt-[170px] roadmap:mt-[148px] lg:mt-[160px] opacity-100">
+              <div className="grid md:grid-cols-3 z-40 mt-[275px] roadmap:mt-[208px] lg:mt-[180px] xl:mt-[160px] opacity-100">
                 <div className="hiddenStep">
                   <div
                     id="firstStep"
