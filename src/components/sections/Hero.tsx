@@ -35,7 +35,7 @@ function Hero() {
 
   return (
     <div className="bg-neutral0 xl:py-[36px] ">
-      <div className="centered px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]">
+      <div className="centered px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[150px]">
         <Navbar />
         <div
           className="flex flex-col lg:flex-row justify-between"
