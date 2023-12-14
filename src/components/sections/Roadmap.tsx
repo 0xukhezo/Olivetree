@@ -107,7 +107,7 @@ export default function Roadmap() {
               className={`flex justify-center items-center min-h-[90px] relative px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]`}
               style={{ width: `${width}px` }}
             >
-              <div className="grid md:grid-cols-3 z-40 mt-[275px] roadmap:mt-[208px] lg:mt-[180px] xl:mt-[160px] opacity-100">
+              <div className="grid md:grid-cols-3 z-40 mt-[280px] roadmap:mt-[220px] lg:mt-[250px] xl:mt-[220px] opacity-100">
                 <div className="hiddenStep">
                   <div
                     id="firstStep"
@@ -119,9 +119,10 @@ export default function Roadmap() {
                     <h1 className="font-spectral font-bold text-2xl tracking-wider">
                       Originations
                     </h1>
-                    <p className="max-w-[365px] mt-[15px] text-xl">
-                      Borrow against any on-chain assets, at hyper-efficient
+                    <p className="max-w-[365px] mt-[15px] lg:text-xl">
+                      Borrow against any onchain assets, at hyper-efficient
                       fixed rates, while protected from forced liquidations
+                      Offchain high-yield credit is made composable with DeFi
                     </p>
                   </div>
                 </div>{" "}
@@ -136,7 +137,7 @@ export default function Roadmap() {
                     <h1 className="font-spectral font-bold text-2xl tracking-wider">
                       Secondaries Marketplace
                     </h1>
-                    <p className="max-w-[365px] mt-[15px] text-xl">
+                    <p className="max-w-[365px] mt-[15px] lg:text-xl">
                       For participants (or strategies) that require rapid
                       entering and exiting positions to farm yields
                     </p>
@@ -153,7 +154,7 @@ export default function Roadmap() {
                     <h1 className="font-spectral  font-bold text-2xl tracking-wider">
                       Credit Protection
                     </h1>
-                    <p className="max-w-[365px] mt-[15px] text-xl">
+                    <p className="max-w-[365px] mt-[15px] lg:text-xl">
                       Market participants can hedge against the creditworthiness
                       of any debt instrument on Olivetree
                     </p>

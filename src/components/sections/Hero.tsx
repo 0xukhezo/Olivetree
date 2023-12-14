@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from "react";
 // Components
 import Navbar from "../layout/Navbar";
-import Paragraphs from "../Paragraphs/Paragraphs";
-import DesktopTree from "../Images/DesktopTree";
-import DesktopTreeMobile from "../Images/DesktopTreeMobile";
+import Paragraphs from "../paragraphs/Paragraphs";
+import DesktopTree from "../images/DesktopTree";
+import DesktopTreeMobile from "../images/DesktopTreeMobile";
 
 function Hero() {
   const [gapX, setGapX] = useState(108);

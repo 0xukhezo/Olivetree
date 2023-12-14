@@ -3,9 +3,9 @@ import React from "react";
 // Next
 import Image from "next/image";
 // Components
-import Paragraphs from "../Paragraphs/Paragraphs";
-import Loans from "../Images/Loans";
-import Segreged from "../Images/Segregated";
+import Paragraphs from "../paragraphs/Paragraphs";
+import Loans from "../images/Loans";
+import Segreged from "../images/Segregated";
 // Images
 import Lens from "../../../public/Lens.svg";
 import LoansImage from "../../../public/Loans.svg";
@@ -27,9 +27,9 @@ function Why() {
                 For Borrowers
               </h2>
               <p className="max-w-[484px] xl:mx-auto">
-                Receive one loan against any or all of your on-chain assets. No
-                forced liquidations and repay at any time with structures unique
-                to you.
+                Olivetree is the first credit arrangement and syndication
+                platform built specifically for DeFi, making offchain credit
+                assets composable
               </p>
             </div>
             <div className="mt-[16px] md:mt-0">
@@ -37,8 +37,9 @@ function Why() {
                 For Lenders
               </h2>
               <p className="max-w-[484px] xl:mx-auto">
-                Earn attractive fixed-rate returns for your stablecoins. Access
-                yield from any asset class with sustainable on-chain returns.
+                Lenders (in any jurisdiction) can earn attractive fixed-rate
+                returns on their stablecoins and access yields derived from the
+                largest economic engines
               </p>
             </div>
           </div>
