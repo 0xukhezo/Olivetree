@@ -3,9 +3,9 @@ import React from "react";
 // Next
 import Image from "next/image";
 // Components
-import Paragraphs from "../paragraphs/Paragraph";
-import Loans from "../images/Loans";
-import Segreged from "../images/Segregated";
+import Paragraphs from "../containers/Paragraph";
+import Loans from "../imagesSvg/Loans";
+import Segreged from "../imagesSvg/Segregated";
 // Images
 import Lens from "../../../public/Lens.svg";
 import LoansImage from "../../../public/Loans.svg";

@@ -3,7 +3,7 @@ import React from "react";
 // Components
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
-import ConditionsPrivacyInfo from "@/components/paragraphs/ConditionsPrivacyInfo";
+import ConditionsPrivacyInfo from "@/components/containers/ConditionsPrivacyInfo";
 
 const conditionsData = [
   {
