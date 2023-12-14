@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 // Components
 import Navbar from "../layout/Navbar";
-import Paragraphs from "../paragraphs/Paragraph";
+import Paragraph from "../paragraphs/Paragraph";
 import DesktopTree from "../images/DesktopTree";
 import DesktopTreeMobile from "../images/DesktopTreeMobile";
 
@@ -42,7 +42,7 @@ function Hero() {
           style={{ gap: `${gapX}px` }}
         >
           <div className="hiddenShowLeft mt-[52px] xl:mt-[196px] treeDesktop:min-w-[376px] xl:min-w-[475px] 2xl:min-w-[625px]">
-            <Paragraphs
+            <Paragraph
               title={
                 <h1 className="text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral">
                   Flexible Peer-to-Syndicate Lending for All Digital Assets
