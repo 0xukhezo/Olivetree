@@ -6,7 +6,7 @@ interface ParagraphsProps {
   text: ReactElement;
 }
 
-export default function Paragraphs({ title, text }: ParagraphsProps) {
+export default function Paragraph({ title, text }: ParagraphsProps) {
   return (
     <div className="flex flex-col justify-center">
       <div className="gradient-container mb-[16px]">{title}</div>

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 // Components
 import Navbar from "../layout/Navbar";
-import Paragraphs from "../paragraphs/Paragraphs";
+import Paragraphs from "../paragraphs/Paragraph";
 import DesktopTree from "../images/DesktopTree";
 import DesktopTreeMobile from "../images/DesktopTreeMobile";
 
@@ -35,7 +35,7 @@ function Hero() {
 
   return (
     <div className="bg-neutral0 xl:py-[36px] ">
-      <div className="centered px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[150px]">
+      <div className="centered px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]">
         <Navbar />
         <div
           className="flex flex-col lg:flex-row justify-between"

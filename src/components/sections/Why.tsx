@@ -3,7 +3,7 @@ import React from "react";
 // Next
 import Image from "next/image";
 // Components
-import Paragraphs from "../paragraphs/Paragraphs";
+import Paragraphs from "../paragraphs/Paragraph";
 import Loans from "../images/Loans";
 import Segreged from "../images/Segregated";
 // Images
