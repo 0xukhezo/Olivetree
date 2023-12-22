@@ -21,7 +21,7 @@ export default function Early() {
             target="_blank"
           >
             <button className="mt-[32px] lg:mt-0 p-5 bg-greenDark text-white rounded-lg w-[292px] md:w-[200px] lg:w-[190px]">
-              Join us a Lender
+              Join as a Lender
             </button>
           </a>
         </div>
