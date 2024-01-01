@@ -402,3 +402,19 @@ html{
   transition: all 0.8s;
   background-size: 12000%;
 }
+
+.treeAnimation{
+  animation: showTree 1.2s linear forwards;
+}
+
+@keyframes showTree {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
