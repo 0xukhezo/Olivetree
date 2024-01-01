@@ -62,7 +62,7 @@ function Hero() {
               </button>{" "}
             </a>
           </div>
-          <div className="hiddenShowRight w-full mt-[70px] xl:mt-[191px] items-center flex">
+          <div className=" w-full mt-[70px] xl:mt-[191px] items-center flex">
             <div className="lg:block hidden ">
               <DesktopTree />
             </div>
