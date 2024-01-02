@@ -404,7 +404,7 @@ html{
 }
 
 .treeAnimation{
-  animation: showTree 1.2s linear forwards;
+  animation: showTree 1.6s linear forwards;
 }
 
 @keyframes showTree {
