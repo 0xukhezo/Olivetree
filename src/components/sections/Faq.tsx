@@ -13,22 +13,6 @@ export default function Faq() {
           Common questions & answers
         </h1>
         <div className="grid lg:grid-cols-2 gap-x-[50px] justify-items-center text-start">
-          <div className="border-b-1 border-neutral3 max-w-[505px] mb-[41px] lg:mb-0 hiddenShowUp">
-            <h2 className="text-greenDark font-semibold">
-              How does taking out a loan on Olivetree compare to Aave or
-              Compound?
-            </h2>
-            <p className="mt-[24px] mb-[42px] text-neutral6">
-              Peer-to-Pool (or Peer-to-Contract) protocols such as Aave or
-              Compound are attractive for specific approved collateral types
-              (ETH, CRV, etc.) and strategies such as flash loans.
-              <br />
-              Olivetree enables borrowers to finance any combination of
-              arbitrary assets within a single financing, at a predictable
-              fixed-rate. There are no forced-liquidations and borrowers may
-              repay the position at any time.
-            </p>
-          </div>
           <div className="border-b-1 border-neutral3 max-w-[505px] hiddenShowUp">
             <h2 className="text-greenDark font-semibold">
               Why should I lend capital on Olivetree?
@@ -42,18 +26,6 @@ export default function Faq() {
               <br /> Traditional banks moving further away from taking credit
               risk creates space in the market for private capital to benefit
               from these attractive investments.
-            </p>
-          </div>
-          <div className="border-b-1 border-neutral3 max-w-[505px] my-[41px] hiddenShowUp">
-            <h2 className="text-greenDark font-semibold">
-              How am I protected from forced liquidations?
-            </h2>
-            <p className="mt-[24px] mb-[42px] text-neutral6">
-              Peer-to-Syndicate loans on Olivetree are isolated debt structures
-              where the lender(s) take on the credit risk. This has the combined
-              benefits of allowing for unique loan structures and terms, while
-              also avoiding the major risks of Peer-to-Pool models, such as
-              cascading liquidations and oracle accuracy.
             </p>
           </div>
           <div className="border-b-1 border-neutral3 max-w-[505px] mb-[41px] lg:my-[41px] hiddenShowUp">

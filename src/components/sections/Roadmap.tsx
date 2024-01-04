@@ -107,7 +107,7 @@ export default function Roadmap() {
               className={`flex justify-center items-center min-h-[90px] relative px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]`}
               style={{ width: `${width}px` }}
             >
-              <div className="grid md:grid-cols-3 z-40 mt-[280px] roadmap:mt-[220px] lg:mt-[250px] xl:mt-[220px] opacity-100">
+              <div className="grid md:grid-cols-3 z-40 mt-[240px] roadmap:mt-[195px] lg:mt-[285px] xl:mt-[210px] opacity-100">
                 <div className="hiddenStep">
                   <div
                     id="firstStep"
@@ -120,8 +120,10 @@ export default function Roadmap() {
                       Originations
                     </h1>
                     <p className="max-w-[365px] mt-[15px] lg:text-xl">
-                      Borrow against any onchain assets, at hyper-efficient
-                      fixed rates, while protected from forced liquidations
+                      Olivetree ports the yields from traditional private
+                      markets onchain
+                    </p>
+                    <p className="max-w-[365px] mt-[15px] lg:text-xl">
                       Offchain high-yield credit is made composable with DeFi
                     </p>
                   </div>

@@ -27,9 +27,8 @@ function Why() {
                 For Borrowers
               </h2>
               <p className="max-w-[484px] xl:mx-auto">
-                Olivetree is the first credit arrangement and syndication
-                platform built specifically for DeFi, making offchain credit
-                assets composable
+                Olivetree makes yields from offchain credit portable and DeFi
+                composable
               </p>
             </div>
             <div className="mt-[16px] md:mt-0">
@@ -93,15 +92,13 @@ function Why() {
               <Paragraphs
                 title={
                   <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral">
-                    Financing Flexibility. Loans Unique to You.
+                    DeFi Composable
                   </h1>
                 }
                 text={
                   <p className="text-greenDark">
-                    Borrows and lenders are dynamically matched, with optimally
-                    tailored terms for each loan. Credit that borrowers couldn’t
-                    find anywhere else, Olivetree provides loans unique to you
-                    and your assets.
+                    Olivetree provides fixed yields for steady cashflow,
+                    long-term returns and compounding.
                   </p>
                 }
               />
@@ -126,10 +123,8 @@ function Why() {
                 }
                 text={
                   <p className="text-greenDark">
-                    Olivetree supports any combination of arbitrary assets.
-                    Borrowers can add leverage without fear of forced
-                    liquidations, with loans that can be repaid at any time.
-                    Lenders gain access to a new type of marketplace to deploy
+                    Olivetree supports all of the major stablecoins. Lenders
+                    gain access to a new type of marketplace to deploy
                     stablecoins at attractive, fixed yields.
                   </p>
                 }
