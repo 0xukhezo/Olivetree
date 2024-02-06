@@ -62,7 +62,7 @@ function Why() {
                 }
                 text={
                   <p className="text-greenDark ">
-                    When you finance with Olivertree, there are{" "}
+                    When you finance with Olivetree, there are{" "}
                     <span className="font-bold">no oracle dependencies </span>
                     and you don’t share peer-to-pool risks. Olivetree loans are
                     trustless, arranged directly between the borrower and

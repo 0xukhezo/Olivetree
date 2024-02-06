@@ -151,37 +151,37 @@
 #graph1{
   height: 20%;
   animation: graph1-animation 2s linear forwards;
-    animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 
 #graph2{
   height: 18%;
   animation: graph2-animation 2s linear forwards;
-    animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 
 #graph3{
   height: 16%;
   animation: graph3-animation 2s linear forwards;
-    animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 
 #graph4{
   height: 27%;
   animation: graph4-animation 2s linear forwards;
-    animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 
 #graph5{
   height: 28%;
   animation: graph5-animation 2s linear forwards;
-    animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 
 #graph6{
   height: 33%;
   animation: graph6-animation 2s linear forwards;
-    animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 
 html{
