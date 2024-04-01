@@ -58,7 +58,7 @@ export default function Home() {
       <Why />
       <Early />
       <Roadmap />
-      <Faq />
+      {/* <Faq /> */}
       <Next />
       <Footer />
     </main>

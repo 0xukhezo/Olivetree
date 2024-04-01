@@ -367,6 +367,14 @@ html{
   );
 }
 
+.double-color-green {
+  background: linear-gradient(to bottom,
+      #083C2F 0%,
+      #083C2F 50%,
+      #042C22 50%,
+      #042C22 100%);
+}
+
 .footer-links{
   color:#a6a5a5;
   transition-property: color;

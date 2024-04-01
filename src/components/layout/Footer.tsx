@@ -14,8 +14,8 @@ export default function Footer() {
     <div
       className={`${
         router.route !== "/"
-          ? "bg-white text-greenDark"
-          : "bg-greenDark text-white"
+          ? "bg-white text-greenUltra"
+          : "bg-greenUltra text-white"
       }  pt-[57px] xl:pt-[114px] px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]`}
     >
       <div className="centered">
@@ -90,7 +90,7 @@ export default function Footer() {
         </div>
         <div
           className={`pb-[100px] pt-[42px] ${
-            router.route !== "/" ? "text-greenDark" : "text-white"
+            router.route !== "/" ? "text-greenUltra" : "text-white"
           } text-center`}
         >
           Copyright © 2023 Inclusio Labs. All Rights Reserved

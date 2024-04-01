@@ -17,6 +17,7 @@
     "@types/react-window-size": "^1.2.0",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
+    "input-otp": "^1.2.4",
     "next": "13.4.19",
     "next-themes": "^0.2.1",
     "react": "18.2.0",

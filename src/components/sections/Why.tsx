@@ -10,6 +10,9 @@ import Segreged from "../imagesSvg/Segregated";
 import Lens from "../../../public/Lens.svg";
 import LoansImage from "../../../public/Loans.svg";
 import SegregatedImage from "../../../public/Segregated.svg";
+import SegregatedWithoutAnimations from "../../../public/SegregatedWithoutAnimations.svg";
+import DashboardWithOutAnimations from "../../../public/DashboardWithOutAnimations.svg";
+import LensWithoutAnimations from "../../../public/LensWithoutAnimations.svg";
 
 function Why() {
   return (
@@ -21,32 +24,14 @@ function Why() {
               Why Choose <br className="block md:hidden" /> Olivetree?
             </h1>
           </div>
-          <div className="grid md:grid-cols-2 mt-[48px] gap-x-[16px] ">
-            <div>
-              <h2 className="mb-[16px] text-greenDark text-lg font-semibold">
-                For Borrowers
-              </h2>
-              <p className="max-w-[484px] xl:mx-auto">
-                Olivetree makes yields from offchain credit portable and DeFi
-                composable
-              </p>
-            </div>
-            <div className="mt-[16px] md:mt-0">
-              <h2 className="mb-[16px] text-greenDark text-lg font-semibold">
-                For Lenders
-              </h2>
-              <p className="max-w-[484px] xl:mx-auto">
-                Lenders (in any jurisdiction) can earn attractive fixed-rate
-                returns on their stablecoins and access yields derived from the
-                largest economic engines
-              </p>
-            </div>
+          <div className="max-w-[484px] xl:mx-auto">
+            Earn a high fixed-rate yield on-chain without lockups or variability
           </div>
         </div>
         <div>
           <div className="grid lg:grid-cols-2 ">
             <Image
-              src={SegregatedImage.src}
+              src={SegregatedWithoutAnimations.src}
               alt="Your Company"
               width={578}
               height={454}
@@ -56,33 +41,44 @@ function Why() {
               <Paragraphs
                 title={
                   <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral ">
-                    Segregated Risk Arranged directly between borrowers &
-                    lenders.
+                    The First ERC-4626 Fixed-Rate Yield Protocol.
                   </h1>
                 }
                 text={
                   <p className="text-greenDark ">
-                    When you finance with Olivetree, there are{" "}
-                    <span className="font-bold">no oracle dependencies </span>
-                    and you don’t share peer-to-pool risks. Olivetree loans are
-                    trustless, arranged directly between the borrower and
-                    lenders; risks are isolated and your assets are protected
-                    from forced liquidations.
+                    Olivetree brings you an attractive,
+                    <span className="font-bold">fixed-rate yield backed </span>
+                    by broadly-diversified RWA private credit. No more variable
+                    yield positions that underperform over time, only
+                    predictable yields that can be compounded with confidence.
                   </p>
                 }
               />
             </div>
             <div className="hiddenShowRight lg:block hidden my-auto mx-auto">
-              <Segreged />
+              {" "}
+              <Image
+                src={SegregatedWithoutAnimations.src}
+                alt="Your Company"
+                width={578}
+                height={454}
+              />
+              {/* <Segreged /> */}
             </div>
           </div>
 
           <div className="grid lg:grid-cols-2 lg:my-[124px] items-center">
             <div className="hiddenShowLeft lg:block hidden mb-[100px] lg:mb-0 my-auto mx-auto">
-              <Loans />
+              {/* <Loans /> */}
+              <Image
+                src={DashboardWithOutAnimations.src}
+                alt="Your Company"
+                width={578}
+                height={454}
+              />{" "}
             </div>
             <Image
-              src={LoansImage.src}
+              src={DashboardWithOutAnimations.src}
               alt="Your Company"
               width={578}
               height={454}
@@ -106,32 +102,32 @@ function Why() {
           </div>
           <div className="grid lg:grid-cols-2">
             <Image
-              src={Lens.src}
+              src={LensWithoutAnimations.src}
               alt="Your Company"
               width={578}
               height={454}
               className="hiddenShowRight block lg:hidden mx-auto"
             />{" "}
-            <div className="hiddenShowLeft max-w-[500px] mx-auto">
+            <div className="hiddenShowLef mx-auto">
               <Paragraphs
                 title={
-                  <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral">
-                    Fast.
-                    <br /> Lending.
-                    <br /> Reformed.
+                  <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral text-nowrap">
+                    Reliable.
+                    <br /> Fixed Yields.
+                    <br /> Automated Income.
                   </h1>
                 }
                 text={
-                  <p className="text-greenDark">
-                    Olivetree supports all of the major stablecoins. Lenders
-                    gain access to a new type of marketplace to deploy
-                    stablecoins at attractive, fixed yields.
+                  <p className="text-greenDark  max-w-[500px]">
+                    Olivetree supports all major stablecoins and is tailored to
+                    work with DeFi yield-bearing strategies, providing users
+                    with the best fixed-rate yield onchain.
                   </p>
                 }
               />{" "}
             </div>
             <Image
-              src={Lens.src}
+              src={LensWithoutAnimations.src}
               alt="Your Company"
               width={565}
               height={480}

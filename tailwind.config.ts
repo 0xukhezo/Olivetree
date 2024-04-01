@@ -17,6 +17,7 @@ const config: Config = {
         neutral6: "#3C4A47",
         greenLight: "#C9F269",
         greenDark: "#083C2F",
+        greenUltra: "#042C22",
       },
       borderWidth: { 1: "1px" },
       screens: {
@@ -25,6 +26,15 @@ const config: Config = {
       },
       fontFamily: {
         spectral: ["Spectral", "regular"],
+      },
+      keyframes: {
+        "caret-blink": {
+          "0%,70%,100%": { opacity: "1" },
+          "20%,50%": { opacity: "0" },
+        },
+      },
+      animation: {
+        "caret-blink": "caret-blink 1.2s ease-out infinite",
       },
     },
   },
