@@ -91,12 +91,8 @@ export default function Roadmap() {
           ref={divRef}
         >
           <h1 className="text-5xl md:text-6xl xl:text-7xl font-semibold tracking-wide font-spectral">
-            Roadmap
+            How it Works
           </h1>
-          <p className="max-w-[450px] mx-auto mt-[16px] text-xl">
-            We are in the early stages of a seminal evolution in credit,
-            bringing superior financing solutions to lenders and borrowers.
-          </p>
         </div>
         <div id="roadmap" className="mt-20 md:mt-0">
           <div
@@ -107,7 +103,7 @@ export default function Roadmap() {
               className={`flex justify-center items-center min-h-[90px] relative px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]`}
               style={{ width: `${width}px` }}
             >
-              <div className="grid md:grid-cols-3 z-40 mt-[240px] roadmap:mt-[195px] lg:mt-[285px] xl:mt-[210px] opacity-100">
+              <div className="grid md:grid-cols-3 z-40 mt-[190px] roadmap:mt-[195px] lg:mt-[200px] xl:mt-[200px] 2xl:mt-[160px] opacity-100">
                 <div className="hiddenStep">
                   <div
                     id="firstStep"
@@ -117,14 +113,10 @@ export default function Roadmap() {
                   </div>
                   <div className="hiddenStepText p-[20px] flex justify-center items-center flex-col">
                     <h1 className="font-spectral font-bold text-2xl tracking-wider">
-                      Originations
+                      Choose your Asset
                     </h1>
                     <p className="max-w-[365px] mt-[15px] lg:text-xl">
-                      Olivetree ports the yields from traditional private
-                      markets onchain
-                    </p>
-                    <p className="max-w-[365px] mt-[15px] lg:text-xl">
-                      Offchain high-yield credit is made composable with DeFi
+                      USDC or USDT
                     </p>
                   </div>
                 </div>{" "}
@@ -137,11 +129,11 @@ export default function Roadmap() {
                   </div>
                   <div className="hiddenStepText p-[20px] flex justify-center items-center flex-col">
                     <h1 className="font-spectral font-bold text-2xl tracking-wider">
-                      Secondaries Marketplace
+                      Select Fixed-Yield Strategy
                     </h1>
                     <p className="max-w-[365px] mt-[15px] lg:text-xl">
-                      For participants (or strategies) that require rapid
-                      entering and exiting positions to farm yields
+                      Participants can rapidly enter, exit and retrieve yields.
+                      Fixed-rate farming.
                     </p>
                   </div>
                 </div>{" "}
@@ -154,11 +146,11 @@ export default function Roadmap() {
                   </div>
                   <div className="hiddenStepText p-[20px] flex justify-center items-center flex-col">
                     <h1 className="font-spectral  font-bold text-2xl tracking-wider">
-                      Credit Protection
+                      Your Dashboard
                     </h1>
                     <p className="max-w-[365px] mt-[15px] lg:text-xl">
-                      Market participants can hedge against the creditworthiness
-                      of any debt instrument on Olivetree
+                      Watch fixed-rate yields accrue to your account.
+                      Predictable income you can count on.
                     </p>
                   </div>
                 </div>
