@@ -24,9 +24,6 @@ function Why() {
               Why Choose <br className="block md:hidden" /> Olivetree?
             </h1>
           </div>
-          <div className="max-w-[484px] xl:mx-auto">
-            Earn a high fixed-rate yield on-chain without lockups or variability
-          </div>
         </div>
         <div>
           <div className="grid lg:grid-cols-2 ">
@@ -46,8 +43,7 @@ function Why() {
                 }
                 text={
                   <p className="text-greenDark ">
-                    Olivetree brings you an attractive,
-                    <span className="font-bold">fixed-rate yield backed </span>
+                    Olivetree brings you an attractive fixed-rate yield backed
                     by broadly-diversified RWA private credit. No more variable
                     yield positions that underperform over time, only
                     predictable yields that can be compounded with confidence.
@@ -115,6 +111,7 @@ function Why() {
                     Reliable.
                     <br /> Fixed Yields.
                     <br /> Automated Income.
+                    <br /> More Money.
                   </h1>
                 }
                 text={

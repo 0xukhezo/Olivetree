@@ -28,7 +28,9 @@ export default function Footer() {
               height={50}
               className="ml-[15px] md:ml-0"
             />
-            <p className="mt-[25px]">The next-generation lending protocol.</p>
+            <p className="mt-[25px]">
+              Reliable Fixed-Rate Yield for Your Stablecoins.
+            </p>
           </div>
           <div>
             <h1 className="font-semibold">Company</h1>
