@@ -91,8 +91,11 @@ export default function Roadmap() {
           ref={divRef}
         >
           <h1 className="text-5xl md:text-6xl xl:text-7xl font-semibold tracking-wide font-spectral">
-            How it Works
+            The Problems
           </h1>
+          <p className="text-greenDark text-xl">
+            Current Financial Instruments for Stablecoins Disappoint
+          </p>
         </div>
         <div id="roadmap" className="mt-20 md:mt-0">
           <div
@@ -103,7 +106,7 @@ export default function Roadmap() {
               className={`flex justify-center items-center min-h-[90px] relative px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]`}
               style={{ width: `${width}px` }}
             >
-              <div className="grid md:grid-cols-3 z-40 mt-[190px] roadmap:mt-[195px] lg:mt-[200px] xl:mt-[200px] 2xl:mt-[160px] opacity-100">
+              <div className="grid md:grid-cols-3 z-40 mt-[160px] roadmap:mt-[155px] lg:mt-[170px] xl:mt-[130px] 2xl:mt-[140px] opacity-100">
                 <div className="hiddenStep">
                   <div
                     id="firstStep"
@@ -113,10 +116,10 @@ export default function Roadmap() {
                   </div>
                   <div className="hiddenStepText p-[20px] flex justify-center items-center flex-col">
                     <h1 className="font-spectral font-bold text-2xl tracking-wider">
-                      Choose your Asset
+                      Limited Selection
                     </h1>
                     <p className="max-w-[365px] mt-[15px] lg:text-xl">
-                      USDC or USDT
+                      Products lack meaningful risk differentiation
                     </p>
                   </div>
                 </div>{" "}
@@ -129,11 +132,10 @@ export default function Roadmap() {
                   </div>
                   <div className="hiddenStepText p-[20px] flex justify-center items-center flex-col">
                     <h1 className="font-spectral font-bold text-2xl tracking-wider">
-                      Select Fixed-Yield Strategy
+                      Return Reflexivity
                     </h1>
                     <p className="max-w-[365px] mt-[15px] lg:text-xl">
-                      Participants can rapidly enter, exit and retrieve yields.
-                      Fixed-rate farming.
+                      Volatile, variable returns
                     </p>
                   </div>
                 </div>{" "}
@@ -146,11 +148,11 @@ export default function Roadmap() {
                   </div>
                   <div className="hiddenStepText p-[20px] flex justify-center items-center flex-col">
                     <h1 className="font-spectral  font-bold text-2xl tracking-wider">
-                      Your Dashboard
+                      Unpredictable
                     </h1>
                     <p className="max-w-[365px] mt-[15px] lg:text-xl">
-                      Watch fixed-rate yields accrue to your account.
-                      Predictable income you can count on.
+                      Confusing risk and return profiles Are not suitable for
+                      long-term allocations
                     </p>
                   </div>
                 </div>

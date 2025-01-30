@@ -6,8 +6,11 @@ import { OTPInput, SlotProps } from "input-otp";
 
 export default function Early() {
   return (
-    <div className="double-color w-full ">
-      <div className="centered mt-[32px] xl:h-[320px] flex items-center justify-center px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]">
+    <div className="double-color w-full">
+      <div
+        className="centered mt-[32px] xl:h-[320px] flex items-center justify-center px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]"
+        id="early"
+      >
         <div className="bg-greenLight flex flex-col  items-center text-center w-screen px-[20px] xl:px-[40px] py-[32px]">
           <div className="max-w-[500px] mx-auto items-center flex flex-col">
             <h1 className="text-4xl text-greenDark mb-[8px] font-spectral">

@@ -4,25 +4,31 @@ import React from "react";
 import Image from "next/image";
 // Components
 import Paragraphs from "../containers/Paragraph";
-import Loans from "../imagesSvg/Loans";
-import Segreged from "../imagesSvg/Segregated";
 // Images
-import Lens from "../../../public/Lens.svg";
-import LoansImage from "../../../public/Loans.svg";
-import SegregatedImage from "../../../public/Segregated.svg";
 import SegregatedWithoutAnimations from "../../../public/SegregatedWithoutAnimations.svg";
 import DashboardWithOutAnimations from "../../../public/DashboardWithOutAnimations.svg";
 import LensWithoutAnimations from "../../../public/LensWithoutAnimations.svg";
+import Paragraph from "../containers/Paragraph";
 
 function Why() {
   return (
     <div className="bg-white" id="why">
       <div className="centered px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]">
-        <div className="text-start md:text-center text-greenDark mb-[63px] xl:mb-[250px] mt-[100px] xl:mt-[235px] hiddenShowUp">
+        <div className="text-start md:text-center text-greenDark mb-[63px] xl:mb-[150px] mt-[100px] xl:mt-[135px] hiddenShowUp">
           <div className="gradient-container md:text-greenDark mb-[16px]">
-            <h1 className=" text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight xl:min-h-[137px] font-spectral">
-              Why Choose <br className="block md:hidden" /> Olivetree?
-            </h1>
+            <Paragraph
+              title={
+                <h1 className=" text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight font-spectral">
+                  The Solution
+                </h1>
+              }
+              text={
+                <p className="text-greenDark text-xl">
+                  Transparent, smart and easy to understand fixed-income
+                  products designed for stablecoins
+                </p>
+              }
+            />
           </div>
         </div>
         <div>
@@ -38,21 +44,18 @@ function Why() {
               <Paragraphs
                 title={
                   <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral ">
-                    The First ERC-4626 Fixed-Rate Yield Protocol.
+                    Reliable Income from Fixed Yields.
                   </h1>
                 }
                 text={
                   <p className="text-greenDark ">
-                    Olivetree brings you an attractive fixed-rate yield backed
-                    by broadly-diversified RWA private credit. No more variable
-                    yield positions that underperform over time, only
-                    predictable yields that can be compounded with confidence.
+                    Institutional-grade returns derived from private markets,
+                    accessible by anyone, anywhere.
                   </p>
                 }
               />
             </div>
             <div className="hiddenShowRight lg:block hidden my-auto mx-auto">
-              {" "}
               <Image
                 src={SegregatedWithoutAnimations.src}
                 alt="Your Company"
@@ -83,14 +86,14 @@ function Why() {
             <div className="hiddenShowRight max-w-[500px] mx-auto">
               <Paragraphs
                 title={
-                  <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral">
-                    DeFi Composable
+                  <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight font-spectral">
+                    Without the Market Volatility
                   </h1>
                 }
                 text={
                   <p className="text-greenDark">
-                    Olivetree provides fixed yields for steady cashflow,
-                    long-term returns and compounding.
+                    No volatility from crypto, stock markets, individual
+                    companies or counterparties.
                   </p>
                 }
               />
@@ -107,18 +110,14 @@ function Why() {
             <div className="hiddenShowLef mx-auto">
               <Paragraphs
                 title={
-                  <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral text-nowrap">
-                    Reliable.
-                    <br /> Fixed Yields.
-                    <br /> Automated Income.
-                    <br /> More Money.
+                  <h1 className="text-4xl lg:text-7xl font-semibold tracking-tight font-spectral text-nowrap">
+                    Clear Route to Compounding
                   </h1>
                 }
                 text={
                   <p className="text-greenDark  max-w-[500px]">
-                    Olivetree supports all major stablecoins and is tailored to
-                    work with DeFi yield-bearing strategies, providing users
-                    with the best fixed-rate yield onchain.
+                    Enduring and transparent products designed to enable
+                    long-term compounding through predictable income.
                   </p>
                 }
               />{" "}

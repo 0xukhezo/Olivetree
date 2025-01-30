@@ -27,44 +27,29 @@ export default function Navbar() {
               </Link>
             </div>
             <div className="flex items-center">
-              <div className="hidden sm:ml-6 md:block">
+              <div className="hidden md:block">
                 <div className="flex space-x-10 text-neutral6">
                   <Link
-                    href={router.route !== "/" ? "/#why" : "#why"}
+                    href={router.route !== "/" ? "/#early" : "#early"}
                     className="underline-hover"
                   >
-                    Why
+                    Early access
                   </Link>
-                  <Link
-                    href={router.route !== "/" ? "/#roadmap" : "#roadmap"}
+                  <a
+                    href="https://mirror.xyz/0xb936B1557BEC98b2C86CFd26176430e0FD22E794"
+                    target="_blank"
                     className="underline-hover"
                   >
-                    Roadmap
-                  </Link>
-                  <Link
-                    href={router.route !== "/" ? "/#faq" : "#faq"}
-                    className="underline-hover"
-                  >
-                    FAQ
-                  </Link>
+                    Resources
+                  </a>
                 </div>
               </div>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-9 text-neutral6 items-center">
-                <button
-                  onClick={() =>
-                    router.push(
-                      "mailto:hello@inclusiolabs.com?subject=Learn%20more%20about%20Olivetree"
-                    )
-                  }
-                  className="underline-hover"
-                >
-                  Contact Us
-                </button>
-                <a href="https://twitter.com/olivetreecredit" target="_blank">
+                <a href="https://x.com/olivetreeyield" target="_blank">
                   <button className="btn text-white border-2 border-neutral3 px-3.5 py-3 rounded-lg hover:border-neutral6">
-                    Join our X
+                    X
                   </button>
                 </a>
               </div>
@@ -73,11 +58,15 @@ export default function Navbar() {
         </div>
         <div className="md:hidden fixed inset-x-0 bottom-0 w-full z-50 ">
           <div className="mx-5 flex items-center justify-between mb-[25px] bg-greenDark text-white p-5 rounded-lg border-white border-1">
-            <Link href={router.route !== "/" ? "/#why" : "#why"}>Why</Link>
-            <Link href={router.route !== "/" ? "/#roadmap" : "#roadmap"}>
-              Roadmap
+            <Link href={router.route !== "/" ? "/#early" : "#early"}>
+              Early access
             </Link>
-            <Link href={router.route !== "/" ? "/#faq" : "#faq"}>FAQ</Link>
+            <a
+              target="_blank"
+              href="https://mirror.xyz/0xb936B1557BEC98b2C86CFd26176430e0FD22E794"
+            >
+              Resources
+            </a>
           </div>
         </div>
       </>

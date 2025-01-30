@@ -29,18 +29,20 @@ export default function Footer() {
               className="ml-[15px] md:ml-0"
             />
             <p className="mt-[25px]">
-              Reliable Fixed-Rate Yield for Your Stablecoins.
+              Wealth Solutions for Decentralized Finance
             </p>
           </div>
           <div>
-            <h1 className="font-semibold">Company</h1>
-            <p
-              className={`md:mt-[25px] mt-[12px] ${
+            <h1 className="md:mb-[25px] mb-[12px] font-semibold">Company</h1>
+            <a
+              href="https://x.com/olivetreeyield"
+              target="_blank"
+              className={`${
                 router.route !== "/" ? "footer-links-pc" : "footer-links"
               }`}
             >
-              Careers (Coming Soon)
-            </p>
+              Careers
+            </a>
           </div>
           <div>
             <h1 className="md:mb-[25px] mb-[12px] font-semibold">Support</h1>
@@ -60,7 +62,7 @@ export default function Footer() {
           <div>
             <h1 className="md:mb-[25px] mb-[12px] font-semibold">Follow Us</h1>
             <a
-              href="https://twitter.com/olivetreecredit"
+              href="https://x.com/olivetreeyield"
               target="_blank"
               className={`${
                 router.route !== "/" ? "footer-links-pc" : "footer-links"
@@ -90,12 +92,21 @@ export default function Footer() {
             Terms & Conditions
           </a>
         </div>
-        <div
-          className={`pb-[100px] pt-[42px] ${
-            router.route !== "/" ? "text-greenUltra" : "text-white"
-          } text-center`}
-        >
-          Copyright © 2023 Inclusio Labs. All Rights Reserved
+        <div className="flex flex-col">
+          <div
+            className={`pt-[42px] ${
+              router.route !== "/" ? "text-greenUltra" : "text-white"
+            } text-center`}
+          >
+            Copyright © 2023 Inclusio Labs. All Rights Reserved.
+          </div>
+          <div
+            className={`pb-[100px] pt-[12px] ${
+              router.route !== "/" ? "text-greenUltra" : "text-white"
+            } text-center`}
+          >
+            Built in partnership with Inclusio Labs
+          </div>
         </div>
       </div>
     </div>

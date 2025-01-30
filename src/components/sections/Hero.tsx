@@ -45,25 +45,21 @@ function Hero() {
             <Paragraph
               title={
                 <div>
-                  <div className="rounded-full border-1 border-greenDark w-fit px-3 py-1 mb-4 text-greenDark uppercase font-medium bg-[#083C2F25] tracking-wide">
-                    Coming soon
-                  </div>
                   <h1 className="text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral">
-                    Reliable Fixed-Rate Yield for Your Stablecoins
+                    Enabling Perpetual Income
                   </h1>
                 </div>
               }
               text={
                 <p className="text-greenDark text-xl">
-                  Welcome to predictable, fixed-rate yield that you can rely on
-                  for consistent income.
+                  Dollar savings products with a fixed-rate perpetuity
                 </p>
               }
-            />{" "}
-            <a href="https://twitter.com/olivetreecredit" target="_blank">
+            />
+            <a href="https://x.com/olivetreeyield" target="_blank">
               <button className="btn p-5 rounded-lg mt-[32px] sm:min-w-[300px] min-w-[180px]">
                 Join our X
-              </button>{" "}
+              </button>
             </a>
           </div>
           <div className="treeAnimation w-full mt-[70px] xl:mt-[191px] items-center flex">
