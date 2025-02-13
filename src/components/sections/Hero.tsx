@@ -45,13 +45,13 @@ function Hero() {
             <Paragraph
               title={
                 <div>
-                  <h1 className="text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight lg:min-h-[237px] font-spectral">
+                  <h1 className="text-3xl md:text-4xl xl:text-5xl font-semibold tracking-tight font-spectral">
                     Enabling Perpetual Income
                   </h1>
                 </div>
               }
               text={
-                <p className="text-greenDark text-xl">
+                <p className="text-greenDark text-lg">
                   Dollar savings products with a fixed-rate perpetuity
                 </p>
               }

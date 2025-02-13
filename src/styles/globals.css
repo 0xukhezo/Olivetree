@@ -362,8 +362,8 @@ html{
     to bottom,
     white 0%,
     white 50%,
-    #083C2F 50%,
-    #083C2F 100%
+    #042C22 50%,
+    #042C22 100%
   );
 }
 
@@ -371,8 +371,9 @@ html{
   background: linear-gradient(to bottom,
       #083C2F 0%,
       #083C2F 50%,
-      #042C22 50%,
-      #042C22 100%);
+      white 50%,
+      white 100%
+);
 }
 
 .footer-links{

@@ -93,7 +93,7 @@ export default function Roadmap() {
           <h1 className="text-5xl md:text-6xl xl:text-7xl font-semibold tracking-wide font-spectral">
             The Problems
           </h1>
-          <p className="text-greenDark text-xl">
+          <p className="mt-8 text-xl xl:w-1/4 mx-auto">
             Current Financial Instruments for Stablecoins Disappoint
           </p>
         </div>

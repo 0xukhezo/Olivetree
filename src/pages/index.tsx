@@ -55,11 +55,11 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <Roadmap />
+      <Next />
       <Why />
       <Early />
-      <Roadmap />
       {/* <Faq /> */}
-      <Next />
       <Footer />
     </main>
   );
